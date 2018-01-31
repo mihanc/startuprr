@@ -1,0 +1,39 @@
+mixin overlay
+    .overlay
+        .overlay__ico
+            img.overlay__ico--img(src="../images/work/ico.png" alt="Icon")
+        .overlay__text
+            h2.overlay__head Corporate Brochure
+            h3.overlay__description Illustration / Print
+
+mixin overlay2
+    .overlay2__ico
+        .overlay2__ico
+        .overlay2__ico
+        .overlay2__ico
+        .overlay2__ico
+
+mixin price__item
+    .price__item
+        .price__item--head
+
+            p.price__name Standart Plan
+            .price__help
+                img(src="../images/dollar.svg" alt="Image Title")
+                p.price__number 19
+                .price__small
+                    span 99
+                    img(src="../images/clients/dot.svg" alt="Image Title")
+
+        .price__item--description
+            p.price__text 5 projects
+            p.price__text 5 GB storage
+            p.price__text Unlimited Users
+            p.price__text 5 GB Bandwith
+        .price__item--footer
+            button.price__item--btn sign up now
+
+mixin clients__item
+    .clients__item
+        .clients__image
+            img.team__image--logo(src="../images/clients/270x160.png" alt="Icon")
