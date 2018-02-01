@@ -1,29 +1,43 @@
-@font-face {
-  font-family: Raleway; /* Имя шрифта */
-  src: url(../fonts/Raleway-ExtraBold.ttf);
-}
 
-@font-face {
-  font-family: Raleway-Light;
-  src: url(../fonts/Raleway-Light.ttf);
-}
-
-@font-face {
-  font-family: Raleway-Medium;
-  src: url(../fonts/Raleway-Medium.ttf);
-}
-
-@font-face {
-  font-family: Raleway-ExtraBold;
-  src: url(../fonts/Raleway-ExtraBold.ttf);
-}
-
+@import "base/_fonts.scss";
 @import "helpers/color.scss";
 
 *, :after, :before {
   box-sizing: border-box;
 
 }
+
+@font-face {
+  font-family: 'ralewayextrabold';
+  src: url("../fonts/Releway-extrabold.woff2") format('woff2'),
+  url("../fonts/Releway-extrabold.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ralewaymedium';
+  src: url("../fonts/Raleway-medium.woff2");
+  src: url("../fonts/Raleway-medium.woff2") format('woff2'),
+  url("../fonts/Raleway-medium.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ralewaylight';
+  src: url("../fonts/Raleway-medium.woff2");
+  src: url("../fonts/Releway-extralight.woff2") format('woff2'),
+  url("../fonts/Releway-extralight.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
 
 @mixin row($gutter: $gutter) {
   margin-left: -$gutter;
@@ -67,7 +81,7 @@
   &__preface {
     height: 13px;
     color: #383838;
-    font-family: Raleway;
+    font-family: ralewaymedium;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -76,7 +90,7 @@
     margin-top: 0;
     height: 46px;
     color: #383838;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 64px;
     line-height: 46px;
     text-transform: uppercase;
@@ -108,11 +122,10 @@
 
 .description__tittle {
   width: 662px;
-  height: 13px;
   padding: 10px;
   background-color: #333333;
   color: white;
-  font-family: Raleway-Medium;
+  font-family: ralewaymediun;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
@@ -141,7 +154,7 @@
     display: inline;
     height: 19px;
     color: #383838;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 19px;
@@ -150,7 +163,7 @@
     &__first {
       height: 19px;
       color: $blue-light;
-      font-family: "Raleway";
+      font-family: ralewayextrabold;
       font-size: 26px;
       font-weight: 400;
       line-height: 20px;
@@ -185,7 +198,7 @@
       display: inline-flex;
 
       color: #606060;
-      font-family: Raleway;
+      font-family: ralewayextrabold;
       font-size: 13px;
       font-weight: 400;
 
@@ -223,7 +236,7 @@
   &__second {
     height: 19px;
     color: #00a99d;
-    font-family: "Raleway";
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 20px;
@@ -239,7 +252,7 @@
     display: inline;
     height: 19px;
     color: #383838;
-    font-family: "Raleway";
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 20px;
@@ -249,7 +262,7 @@
   &__descriprion {
     height: 13px;
     color: #8a8a8a;
-    font-family: Raleway-Medium;
+    font-family: ralewaymedium;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -283,7 +296,7 @@
       height: 11px;
       margin-bottom: 20px;
       color: #606060;
-      font-family: "Raleway";
+      font-family: ralewayextrabold;
       font-size: 14px;
       font-weight: 400;
       text-transform: uppercase;
@@ -293,7 +306,7 @@
       height: 38px;
       width: 389px;
       color: #7a7a7a;
-      font-family: Raleway-Medium;
+      font-family: ralewaymedium;
       font-size: 14px;
       font-weight: 500;
       line-height: 24px;
@@ -305,15 +318,11 @@
       border-radius: 5px;
       border: none;
       color: #606060;
-      font-family: Raleway;
+      font-family: ralewayextrabold;
       font-size: 13px;
       font-weight: 400;
       text-transform: uppercase;
-      //width: 100px;
-      //height: 29px;
-      //margin-top: 20px;
-      //background-color: white;
-      //box-shadow: #00a99d;
+
       &:hover {
         background-color: #00a99d;
       }
@@ -357,7 +366,7 @@
     display: inline;
     height: 19px;
     color: #e4e4e4;
-    font-family: Raleway-ExtraBold;
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 20px;
@@ -367,7 +376,7 @@
   &__third {
     height: 19px;
     color: #00a99d;
-    font-family: Raleway-ExtraBold;
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 20px;
@@ -377,7 +386,7 @@
   &__description {
     height: 16px;
     color: #606060;
-    font-family: Raleway-Medium;
+    font-family: ralewaymedium;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -413,7 +422,7 @@
         height: 11px;
         margin-bottom: 0px;
         color: #e4e4e4;
-        font-family: Raleway;
+        font-family: ralewayextrabold;
         font-size: 14px;
         font-weight: 400;
         text-transform: uppercase;
@@ -422,7 +431,7 @@
       &__description {
         height: 38px;
         color: #7a7a7a;
-        font-family: Raleway-Medium;
+        font-family: ralewaymedium;
         font-size: 14px;
         font-weight: 500;
         line-height: 24px;
@@ -470,7 +479,7 @@
       height: 11px;
       margin-top: 0;
       color: #606060;
-      font-family: "Raleway";
+      font-family: ralewayextrabold;
       font-size: 14px;
       font-weight: 400;
       text-transform: uppercase;
@@ -479,7 +488,7 @@
     &__subhead {
       height: 13px;
       color: #aaaaaa;
-      font-family: Raleway-Light;
+      font-family: ralewaylight;
       font-size: 12px;
       font-weight: 500;
     }
@@ -487,7 +496,7 @@
     &__description {
       height: 62px;
       color: #7a7a7a;
-      font-family: Raleway-Light;
+      font-family: ralewaylight;
       font-size: 14px;
       font-weight: 700;
       line-height: 24px;
@@ -533,7 +542,7 @@
     display: inline;
     height: 19px;
     color: #e4e4e4;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 30px;
@@ -544,7 +553,7 @@
   &__selected {
     height: 19px;
     color: #00a99d;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 20px;
@@ -554,7 +563,7 @@
   &__subhead {
     height: 16px;
     color: #606060;
-    font-family: Raleway-Light;
+    font-family: ralewaylight;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -565,9 +574,10 @@
     justify-content: space-between;
 
     &--description {
+      margin-top: 20px;
       height: 11px;
       color: #8a8a8a;
-      font-family: Raleway - ExtraBold;
+      font-family: ralewayextrabold;
       font-size: 14px;
       font-weight: 400;
       line-height: 16px;
@@ -591,7 +601,7 @@
   &__value {
     margin: 0;
     color: #e4e4e4;
-    font-family: Raleway - Extra Bold;
+    font-family: ralewayextrabold;
     font-size: 30px;
     font-weight: 400;
     line-height: 110px;
@@ -668,7 +678,7 @@
   &__head {
     height: 16px;
     color: #e4e4e4;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 400;
   }
@@ -676,7 +686,7 @@
   &__description {
     height: 10px;
     color: #e4e4e4;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 12px;
     font-weight: 500;
     line-height: 22px;
@@ -702,7 +712,7 @@
   &__head {
     height: 19px;
     color: #383838;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 30px;
@@ -712,7 +722,7 @@
   &__description {
     height: 16px;
     color: #8a8a8a;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -745,7 +755,7 @@
     margin-top: 51px;
     background-color: #00a99d;
     border-radius: 10px;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     color: #e4e4e4;
     font-size: 13px;
     font-weight: 400;
@@ -779,7 +789,7 @@
   &__head {
     height: 19px;
     color: #e4e4e4;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 20px;
@@ -789,7 +799,7 @@
   &__description {
     height: 13px;
     color: #606060;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -813,7 +823,7 @@
     margin: 0;
     height: 58px;
     color: #e4e4e4;
-    font-family: Raleway-Medium;
+    font-family: ralewaymedium;
     line-height: 58px;
     font-size: 80px;
     font-weight: 500;
@@ -857,7 +867,7 @@
   &__text {
     height: 11px;
     color: #606060;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
@@ -872,7 +882,7 @@
     margin: 0;
     height: 12px;
     color: #e4e4e4;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 400;
     line-height: 46px;
@@ -890,7 +900,7 @@
     background-color: #e4e4e4;
     border-radius: 5px;
     color: #606060;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
@@ -922,7 +932,7 @@
     margin: 0;
     height: 19px;
     color: #383838;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 20px;
@@ -933,7 +943,7 @@
   &__description {
     height: 16px;
     color: #8a8a8a;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -990,7 +1000,7 @@
       border-radius: 5px;
 
       color: #e4e4e4;
-      font-family: Raleway;
+      font-family: ralewayextrabold;
       font-size: 13px;
       font-weight: 400;
       text-transform: uppercase;
@@ -1011,7 +1021,7 @@
       display: inline-block;
       height: 13px;
       color: #606060;
-      font-family: Raleway;
+      font-family: ralewaymedium;
       font-size: 12px;
       font-weight: 500;
       line-height: 22px;
@@ -1026,7 +1036,7 @@
       margin-bottom: 20px;
       height: 16px;
       color: #8a8a8a;
-      font-family: Raleway-Medium;
+      font-family: ralewaymedium;
       font-size: 16px;
       font-weight: 500;
       line-height: 16px;
@@ -1042,7 +1052,7 @@
       margin-bottom: 20px;
       height: 16px;
       color: #8a8a8a;
-      font-family: Raleway-Medium;
+      font-family: ralewaymedium;
       font-size: 16px;
       font-weight: 500;
       line-height: 16px;
@@ -1082,7 +1092,7 @@
       background-color: #e4e4e4;
       height: 13px;
       color: #aaaaaa;
-      font-family: Raleway;
+      font-family: ralewayextrabold;
       font-size: 12px;
       font-weight: 500;
       text-transform: uppercase;
@@ -1099,7 +1109,7 @@
     margin-top: 30px;
     height: 63px;
     color: #e4e4e4;
-    font-family: Raleway-Light;
+    font-family: ralewaylight;
     font-size: 20px;
     font-weight: 500;
     line-height: 34px;
@@ -1148,7 +1158,7 @@
     margin: 0;
     height: 43px;
     color: #383838;
-    font-family: Raleway - ExtraBold;
+    font-family: ralewayextrabold;
     font-size: 60px;
     font-weight: 400;
     line-height: 26px;
@@ -1168,7 +1178,7 @@
     margin-top: 20px;
     height: 15px;
     color: #8a8a8a;
-    font-family: Raleway-Light;
+    font-family: ralewaylight;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -1196,7 +1206,7 @@
     background-color: #383838;
     border-radius: 5px;
     color: #e4e4e4;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1211,7 +1221,7 @@
     display: inline;
     height: 19px;
     color: #383838;
-    font-family: Raleway-ExtraBold;
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 20px;
@@ -1221,7 +1231,7 @@
   &__selected {
     height: 19px;
     color: #00a99d;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
     line-height: 20px;
@@ -1232,7 +1242,7 @@
 
     height: 16px;
     color: #8a8a8a;
-    font-family: Raleway;
+    font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -1272,7 +1282,7 @@
       height: 39px;
       background-color: #00a99d;
       color: #e4e4e4;
-      font-family: Raleway - ExtraBold;
+      font-family: ralewayextrabold;
       font-size: 13px;
       font-weight: 400;
       text-transform: uppercase;
@@ -1306,7 +1316,7 @@
       display: inline;
       height: 26px;
       color: #383838;
-      font-family: Raleway - ExtraBold;
+      font-family: ralewayextrabold;
       font-size: 26px;
       font-weight: 400;
     }
@@ -1314,7 +1324,7 @@
     span {
       height: 26px;
       color: #383838;
-      font-family: Raleway - ExtraBold;
+      font-family: ralewayextrabold;
       font-size: 26px;
       font-weight: 400;
 
@@ -1327,7 +1337,7 @@
       border: none;
       background-color: #00a99d;
       color: #e4e4e4;
-      font-family: Raleway - ExtraBold;
+      font-family: ralewayextrabold;
       font-size: 13px;
       font-weight: 400;
       text-transform: uppercase;
@@ -1404,7 +1414,7 @@
       border: none;
       background-color: #00a99d;
       color: #e4e4e4;
-      font-family: Raleway - ExtraBold;
+      font-family: ralewayextrabold;
       font-size: 13px;
       font-weight: 400;
       text-transform: uppercase;
@@ -1415,11 +1425,14 @@
     margin-top: 57px;
     text-align: center;
     color: #cccccc;
-    font-family: Raleway - ExtraBold;
+    font-family: ralewayextrabold;
     font-size: 14px;
     font-weight: 400;
 
   }
+}
+.slick-list {
+  overflow: hidden;
 }
 
 
