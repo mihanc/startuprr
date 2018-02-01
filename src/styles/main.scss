@@ -36,6 +36,7 @@
 
 }
 
+
 .row {
   @include row;
 }
@@ -625,6 +626,14 @@
     &:hover {
       fill: #ffb600;
     }
+  }
+
+  &__img {
+
+    &:hover {
+      fill: #ffb600;
+    }
+
   }
 
   &:hover {

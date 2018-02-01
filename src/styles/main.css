@@ -450,6 +450,8 @@
     width: 40px; }
     .overlay2__ico:hover {
       fill: #ffb600; }
+  .overlay2__img:hover {
+    fill: #ffb600; }
   .overlay2:hover {
     opacity: 1; }
 
