@@ -25,8 +25,9 @@ html
                             .banner__description
                                 h3.description__tittle Startuprr, next generation & highly flexible wordpress theme
                             .banner__start
-                                span.start__title__first START
+                                span.start__titlee.selected START
                                 h2.start__title  DOING THAT
+                            img.banner__img(src="../images/arow.png", alt="arow")
 
 
         header.header
@@ -47,7 +48,7 @@ html
                 .row
                     .offer__title
                         h2.offer__header what we
-                        span.offer__second  offer
+                        span.offerr.selected  offer
                         h3.offer__descriprion We offer our customers the best services & solutions, this is our main services list
 
                     section.offer__item__list
@@ -74,7 +75,7 @@ html
             .container
                 .features__title
                     h2.features__head amazing
-                    span.features__third  features
+                    span.featuress.selected  features
                     h3.features__description With unlimited features that we offer, we promise it’s possible to make everything that was impossible for you !
 
                 .features__wrapper
@@ -148,7 +149,7 @@ html
                 .skills__row
                     .skills__title
                         h2.skills__head our powerful
-                        span.skills__selected  skills
+                        span.skillss.selected  skills
                         h3.skills__subhead We’re good and experienced at different things and areas and we promise about qulity of our works
 
                     section.skills__item
@@ -234,7 +235,8 @@ html
             .container
                 .facts__row.row
                     .facts__title
-                        h2.facts__head company facts
+                        h2.facts__head company
+                        span.selected  facts
                         h3.facts__description We do love to work and increase our counter numbers, this is what we’ve done till now
 
                     .facts__item
@@ -277,7 +279,8 @@ html
                 .team__row.row
                     .team__title
                         .arrow
-                            h2.team__head team members
+                            span.selected  team
+                            h2.team__head  members
                         h3.team__description We’re some creative people with powerful knowledge & awesome skills behind the scene bringing you the bests
 
                     .team__list
@@ -386,7 +389,10 @@ html
                         h2.blockquote__quote Lorem ipsum dolor sit amet, laudantium, totam rem. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo consequat magna, id molestie ipsum volutpat quis.
                     .blockquote__footer
                         button.blockquote__slide--prev
+                            img.blockquote__btn(src="../images/blockquote/icon@2x.png" alt="Icon")
                         button.blockquote__slide--next
+                            img.blockquote__btn(src="../images/blockquote/icon2@2x.png" alt="Icon")
+
 
         .clients
             .container
@@ -405,7 +411,7 @@ html
                 .price__row
                     .price__title
                         h2.price__head real cheap
-                        span.price__selected  prices
+                        span.prices.selected  prices
                         h3.price__description We offer all our services in real low prices in comparison with similar companies
                     .price__list
                         +price__item
@@ -428,12 +434,17 @@ html
                 .footer__row
                     .footer__head
                         img.footer__logo(src="../images/footer/new-logo.png" alt="Icon")
-                        .footer__social
-                            img.footer__social--icon(src="../images/footer/facebook.svg" alt="Icon")
-                            img.footer__social--icon(src="../images/footer/twitter.svg" alt="Icon")
-                            img.footer__social--icon(src="../images/footer/pinterest.svg" alt="Icon")
-                            img.footer__social--icon(src="../images/footer/rss.svg" alt="Icon")
-                            img.footer__social--icon(src="../images/footer/vimeo.svg" alt="Icon")
+                        .footer__social--wrapper
+                            .footer__social--ico
+                                img.footer__social--icon(src="../images/footer/facebook.svg" alt="Icon")
+                                img.footer__social--icon(src="../images/footer/twitter.svg" alt="Icon")
+                                img.footer__social--icon(src="../images/footer/pinterest.svg" alt="Icon")
+                                img.footer__social--icon(src="../images/footer/rss.svg" alt="Icon")
+                                img.footer__social--icon(src="../images/footer/vimeo.svg" alt="Icon")
+                                img.footer__social--icon(src="../images/footer/deviantart.svg" alt="Icon")
+                                img.footer__social--icon(src="../images/footer/dribbble.svg" alt="Icon")
+                                img.footer__social--icon(src="../images/footer/linkedin.svg" alt="Icon")
+                                img.footer__social--icon(src="../images/footer/stumbleupon.svg" alt="Icon")
                     .footer__map
                         form.form__container
                             .form-title
