@@ -3,7 +3,6 @@
 
 *, :after, :before {
   box-sizing: border-box;
-
 }
 
 @mixin row($gutter: $gutter) {
@@ -51,7 +50,7 @@
 
   &__preface {
     height: 13px;
-    color: #383838;
+    color: $head-text-color;
     font-family: ralewaymedium;
     font-size: 18px;
     font-weight: 500;
@@ -60,7 +59,7 @@
   &__title {
     margin: 0;
     height: 46px;
-    color: #383838;
+    color: $head-text-color;
     font-family: ralewayextrabold;
     font-size: 64px;
     line-height: 46px;
@@ -128,7 +127,7 @@
   &__title {
     display: inline;
     height: 19px;
-    color: #383838;
+    color: $head-text-color;
     font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
@@ -172,8 +171,8 @@
       margin: 10px;
 
       &:hover {
-        background-color: #00a99d;
-        color: #e4e4e4;
+        background-color: $blue-light;
+        color: $hover-text-color;
         transition: all 0.4s;
       }
     }
@@ -210,7 +209,7 @@
 
   &__second {
     height: 19px;
-    color: #00a99d;
+    color: $blue-light;
     font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
@@ -226,7 +225,7 @@
   &__header {
     display: inline;
     height: 19px;
-    color: #383838;
+    color: $head-text-color;
     font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
@@ -236,7 +235,7 @@
   }
   &__descriprion {
     margin: 0;
-    color: #8a8a8a;
+    color: $description-color;
     font-family: ralewaymedium;
     font-size: 16px;
     font-weight: 500;
@@ -253,7 +252,7 @@
     border-radius: 150px;
 
     &:hover {
-      background-color: #00a99d;
+      background-color: $blue-light;
     }
 
   }
@@ -300,7 +299,7 @@
       text-transform: uppercase;
 
       &:hover {
-        background-color: #00a99d;
+        background-color: $blue-light;
         color: #e3e3e3;
       }
     }
@@ -317,7 +316,7 @@
   position: relative;
   display: flex;
   padding-top: 77px;
-  background-color: #383838;
+  background-color: $head-text-color;
   flex-wrap: wrap;
   flex-direction: column;
 
@@ -330,7 +329,7 @@
     width: 54px;
     height: 54px;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #00a99d;
+    background: $blue-light;
     border-radius: 2px;
   }
 
@@ -351,7 +350,7 @@
 
   &__third {
     height: 19px;
-    color: #00a99d;
+    color: $blue-light;
     font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
@@ -489,7 +488,7 @@
   position: relative;
   padding-top: 77px;
   padding-bottom: 40px;
-  background-color: #383838;
+  background-color: $head-text-color;
 
   &:before {
     position: absolute;
@@ -500,7 +499,7 @@
     width: 54px;
     height: 54px;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #00a99d;
+    background: $blue-light;
     border-radius: 2px;
   }
 
@@ -529,7 +528,7 @@
 
   &__selected {
     height: 19px;
-    color: #00a99d;
+    color: $blue-light;
     font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
@@ -554,7 +553,7 @@
     &--description {
       margin-top: 20px;
       height: 11px;
-      color: #8a8a8a;
+      color: $description-color;
       font-family: ralewayextrabold;
       font-size: 14px;
       font-weight: 400;
@@ -569,7 +568,7 @@
     height: 120px;
     text-align: center;
     font: 40px/100px Times, serif;
-    border: 3px solid #00a99d;
+    border: 3px solid $blue-light;
     border-right: 3px solid white;
     border-radius: 100px;
   }
@@ -601,7 +600,7 @@
   align-items: center;
   opacity: 0;
   transition: .5s ease;
-  background-color: #00a99d;
+  background-color: $blue-light;
 
   &__ico {
     display: inline-flex;
@@ -643,7 +642,7 @@
   flex-direction: column;
   opacity: 0;
   transition: .5s ease;
-  background-color: #00a99d;
+  background-color: $blue-light;
 
   &__ico {
     text-align: center;
@@ -689,7 +688,7 @@
 
   &__head {
     margin: 0;
-    color: #383838;
+    color: $head-text-color;
     font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
@@ -699,7 +698,7 @@
 
   &__description {
     margin: 0;
-    color: #8a8a8a;
+    color: $description-color;
     font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
@@ -731,7 +730,7 @@
     width: 1170px;
     height: 40px;
     margin-top: 51px;
-    background-color: #00a99d;
+    background-color: $blue-light;
     border-radius: 10px;
     font-family: ralewayextrabold;
     color: #e4e4e4;
@@ -745,7 +744,7 @@
 .facts {
   position: relative;
   padding-top: 77px;
-  background-color: #383838;
+  background-color: $head-text-color;
 
   &:before {
     position: absolute;
@@ -756,7 +755,7 @@
     width: 54px;
     height: 54px;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #00a99d;
+    background: $blue-light;
     border-radius: 2px;
   }
 
@@ -824,7 +823,7 @@
     &:hover {
       opacity: 1;
       &:after, &:before {
-        background: #00a99d;
+        background: $blue-light;
       }
     }
 
@@ -933,7 +932,7 @@
     display: inline;
     margin: 0;
     height: 19px;
-    color: #383838;
+    color: $head-text-color;
     font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
@@ -944,7 +943,7 @@
 
   &__description {
     margin: 0;
-    color: #8a8a8a;
+    color: $description-color;
     font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
@@ -985,7 +984,7 @@
 
       &:hover {
         opacity: 0;
-        background-color: #00a99d;
+        background-color: $blue-light;
       }
     }
 
@@ -998,7 +997,7 @@
       padding-right: 10px;
       height: 40px;
       align-items: center;
-      background-color: #00a99d;
+      background-color: $blue-light;
       border-radius: 5px;
 
       color: #e4e4e4;
@@ -1008,7 +1007,7 @@
       text-transform: uppercase;
 
       &:hover {
-        background-color: #383838;
+        background-color: $head-text-color;
       }
 
     }
@@ -1032,21 +1031,21 @@
 
     &--email {
       margin: 0;
-      color: #8a8a8a;
+      color: $description-color;
       font-family: ralewaymedium;
       font-size: 16px;
       font-weight: 500;
       line-height: 26px;
 
       &:hover {
-        color: #00a99d;
+        color: $blue-light;
       }
 
     }
 
     &--phone {
       margin: 0;
-      color: #8a8a8a;
+      color: $description-color;
       font-family: ralewaymedium;
       font-size: 16px;
       font-weight: 500;
@@ -1058,7 +1057,7 @@
 
 .blockquote {
   position: relative;
-  background-color: #00a99d;
+  background-color: $blue-light;
 
   &:before {
     position: absolute;
@@ -1069,7 +1068,7 @@
     width: 54px;
     height: 54px;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #383838;
+    background: $head-text-color;
     border-radius: 2px;
   }
 
@@ -1139,7 +1138,7 @@
       height: 30px;
       width: 30px;
       border: none;
-      background-color: #383838;
+      background-color: $head-text-color;
 
     }
   }
@@ -1151,7 +1150,7 @@
 
 .clients {
 
-  background-color: #383838;
+  background-color: $head-text-color;
 
   &__row {
     padding-top: 50px;
@@ -1181,7 +1180,7 @@
     display: inline;
     margin: 0;
     height: 43px;
-    color: #383838;
+    color: $head-text-color;
     font-family: ralewayextrabold;
     font-size: 60px;
     font-weight: 400;
@@ -1222,7 +1221,7 @@
     margin-bottom: 20px;
     margin-top: 20px;
     height: 15px;
-    color: #8a8a8a;
+    color: $description-color;
     font-family: ralewaylight;
     font-size: 16px;
     font-weight: 500;
@@ -1248,7 +1247,7 @@
     padding-right: 10px;
     height: 40px;
     align-items: center;
-    background-color: #383838;
+    background-color: $head-text-color;
     border-radius: 5px;
     color: #e4e4e4;
     font-family: ralewayextrabold;
@@ -1257,7 +1256,7 @@
     text-transform: uppercase;
 
     &:hover {
-      background-color: #00a99d;
+      background-color: $blue-light;
     }
 
   }
@@ -1265,7 +1264,7 @@
   &__head {
     display: inline;
     height: 19px;
-    color: #383838;
+    color: $head-text-color;
     font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
@@ -1275,7 +1274,7 @@
 
   &__description {
     margin: 0;
-    color: #8a8a8a;
+    color: $description-color;
     font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
@@ -1314,7 +1313,7 @@
       margin-top: 15%;
       width: 118px;
       height: 39px;
-      background-color: #00a99d;
+      background-color: $blue-light;
       border: none;
       color: #e4e4e4;
       font-family: ralewayextrabold;
@@ -1350,7 +1349,7 @@
     &--head {
       display: inline;
       height: 26px;
-      color: #383838;
+      color: $head-text-color;
       font-family: ralewayextrabold;
       font-size: 26px;
       font-weight: 400;
@@ -1358,7 +1357,7 @@
 
     span {
       height: 26px;
-      color: #383838;
+      color: $head-text-color;
       font-family: ralewayextrabold;
       font-size: 26px;
       font-weight: 400;
@@ -1370,7 +1369,7 @@
       height: 40px;
       padding: 10px;
       border: none;
-      background-color: #00a99d;
+      background-color: $blue-light;
       color: #e4e4e4;
       font-family: ralewayextrabold;
       font-size: 13px;
@@ -1381,7 +1380,7 @@
 }
 
 .footer {
-  background-color: #383838;
+  background-color: $head-text-color;
 
   &__row {
     padding-top: 50px;
@@ -1407,7 +1406,7 @@
       height: 42px;
 
       &:hover {
-        background-color: #00a99d;
+        background-color: $blue-light;
       }
 
     }
@@ -1459,7 +1458,7 @@
       width: 320px;
       height: 40px;
       border: none;
-      background-color: #00a99d;
+      background-color: $blue-light;
       color: #e4e4e4;
       font-family: ralewayextrabold;
       font-size: 13px;
@@ -1485,7 +1484,7 @@
 
 .selected {
   height: 19px;
-  color: #00a99d;
+  color: $blue-light;
   font-family: ralewayextrabold;
   font-size: 26px;
   font-weight: 400;
