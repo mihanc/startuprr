@@ -10,6 +10,7 @@ html
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')
         script(src='../js/main.js')
+        script(src='../js/diagram.js')
 
         include mixins/mixins.pug
 
@@ -17,14 +18,15 @@ html
     body
         .banner
             .container
-                  .banner__wrapper
-                        h3.banner__preface what are you waiting for ?
-                        h2.banner__title let’s be creative !
-                        .banner__description
-                            h3.description__tittle Startuprr, next generation & highly flexible wordpress theme
-                        .banner__start
-                            span.start__title__first START
-                            h2.start__title  DOING THAT
+                  .banner__row
+                      .banner__wrapper
+                            h3.banner__preface what are you waiting for ?
+                            h2.banner__title let’s be creative !
+                            .banner__description
+                                h3.description__tittle Startuprr, next generation & highly flexible wordpress theme
+                            .banner__start
+                                span.start__title__first START
+                                h2.start__title  DOING THAT
 
 
         header.header
@@ -36,6 +38,8 @@ html
                         ul.header__list
                             for name in element
                                 li.header__list__item= name
+                    a.header__loop(href="#")
+                        img.loop--img(src="../images/header/loop.png" alt="Search")
 
 
         .offer
@@ -152,7 +156,7 @@ html
                             p.skills__value 55
                                 span.skills__percent %
                             .skills__item--description web design
-                            
+
                         .skills__item-list
                             p.skills__value 92
                                 span.skills__percent %
@@ -282,15 +286,15 @@ html
                                 img.team__photo--image(src="../images/team/270x270.png" alt="Icon")
                                 .overlay2
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/facebook-logo.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/twitter.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/google-plus.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/vimeo.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/dribble.svg" alt="Icon")
 
                                 p.team__photo--name Alexis Simpson
 
@@ -307,15 +311,15 @@ html
                                 img.team__photo--image(src="../images/team/270x270.png" alt="Icon")
                                 .overlay2
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/facebook-logo.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/twitter.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/google-plus.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/vimeo.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/dribble.svg" alt="Icon")
 
                                 p.team__photo--name Alexis Simpson
                             .team__info
@@ -330,15 +334,15 @@ html
                                 img.team__photo--image(src="../images/team/270x270.png" alt="Icon")
                                 .overlay2
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/facebook-logo.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/twitter.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/google-plus.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/vimeo.svg" alt="Icon")
                                     .overlay2__ico
-                                        img.overlay2__img(src="../images/team/bg.svg" alt="Icon")
+                                        img.overlay2__img(src="../images/team/social/dribble.svg" alt="Icon")
 
                                 p.team__photo--name Alexis Simpson
                             .team__info
@@ -353,10 +357,15 @@ html
                                  img.team__photo--image(src="../images/team/270x270.png" alt="Icon")
                                  .overlay2
                                      .overlay2__ico
+                                         img.overlay2__img(src="../images/team/social/facebook-logo.svg" alt="Icon")
                                      .overlay2__ico
+                                         img.overlay2__img(src="../images/team/social/twitter.svg" alt="Icon")
                                      .overlay2__ico
+                                         img.overlay2__img(src="../images/team/social/google-plus.svg" alt="Icon")
                                      .overlay2__ico
+                                         img.overlay2__img(src="../images/team/social/vimeo.svg" alt="Icon")
                                      .overlay2__ico
+                                         img.overlay2__img(src="../images/team/social/dribble.svg" alt="Icon")
 
                                  p.team__photo--name Alexis Simpson
 
@@ -375,6 +384,9 @@ html
                         h3.blockquote__author--name alexis simpson - CEO & Developer
                     .blockquote__text
                         h2.blockquote__quote Lorem ipsum dolor sit amet, laudantium, totam rem. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo consequat magna, id molestie ipsum volutpat quis.
+                    .blockquote__footer
+                        button.blockquote__slide--prev
+                        button.blockquote__slide--next
 
         .clients
             .container

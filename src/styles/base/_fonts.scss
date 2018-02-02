@@ -1,18 +1,28 @@
 
-
 @font-face {
   font-family: 'ralewayextrabold';
-  src: url('raleway-extrabold-webfont.woff2') format('woff2'),
-  url('raleway-extrabold-webfont.woff') format('woff');
+  src: url("../../fonts/Releway-extrabold.woff2") format('woff2'),
+  url("../../fonts/Releway-extrabold.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 
 }
 
 @font-face {
-  font-family: 'ralewayextralight';
-  src: url('raleway-extralight-webfont.woff2') format('woff2'),
-  url('raleway-extralight-webfont.woff') format('woff');
+  font-family: 'ralewaymedium';
+  src: url("../../fonts/Raleway-medium.woff2");
+  src: url("../../fonts/Raleway-medium.woff2") format('woff2'),
+  url("../../fonts/Raleway-medium.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ralewaylight';
+  src: url("../../fonts/Raleway-medium.woff2");
+  src: url("../../fonts/Releway-extralight.woff2") format('woff2'),
+  url("../../fonts/Releway-extralight.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 
