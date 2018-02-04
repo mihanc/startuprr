@@ -1,17 +1,8 @@
 doctype html
 html
     head
-        title= title
-
-        link(type="text/css", rel="stylesheet", href="css/main.css")
-        link(type="text/css", rel="stylesheet", href="../src/styles/slick/slick.css")
-        link(type="text/css", rel="stylesheet", href="../src/styles/slick/slick-theme.css")
-        link(type="text/css", rel="stylesheet", href="../src/styles/normalize.css")
-        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')
-        script(src='../js/main.js')
-        script(src='../js/diagram.js')
-
+        include meta/_head
+        include meta/_scripts
         include mixins/mixins.pug
 
 
@@ -25,7 +16,7 @@ html
                             .banner__description
                                 h3.description__tittle Startuprr, next generation & highly flexible wordpress theme
                             .banner__start
-                                span.start__titlee.selected START
+                                span.selected START
                                 h2.start__title  DOING THAT
                             img.banner__img(src="../images/arow.png", alt="arow")
 
@@ -48,7 +39,7 @@ html
                 .row
                     .offer__title
                         h2.offer__header what we
-                        span.offerr.selected  offer
+                        span.selected  offer
                         h3.offer__descriprion We offer our customers the best services & solutions, this is our main services list
 
                     section.offer__item__list
@@ -75,7 +66,7 @@ html
             .container
                 .features__title
                     h2.features__head amazing
-                    span.featuress.selected  features
+                    span.selected  features
                     h3.features__description With unlimited features that we offer, we promise it’s possible to make everything that was impossible for you !
 
                 .features__wrapper
@@ -149,35 +140,45 @@ html
                 .skills__row
                     .skills__title
                         h2.skills__head our powerful
-                        span.skillss.selected  skills
+                        span.selected  skills
                         h3.skills__subhead We’re good and experienced at different things and areas and we promise about qulity of our works
 
                     section.skills__item
-                        .skills__item-list
-                            p.skills__value 55
-                                span.skills__percent %
-                            .skills__item--description web design
+                        .skills__item--wrapper
+                            .skills__item-list
+                                p.skills__value 55
+                                    span.skills__percent %
+                                .skills__item--description web design
 
-                        .skills__item-list
-                            p.skills__value 92
-                                span.skills__percent %
-                            .skills__item--description web design
-                        .skills__item-list
-                            p.skills__value 68
-                                span.skills__percent %
-                            .skills__item--description web design
-                        .skills__item-list
-                            p.skills__value 100
-                                span.skills__percent %
-                            .skills__item--description web design
-                        .skills__item-list
-                            p.skills__value 83
-                                span.skills__percent %
-                            .skills__item--description web design
-                        .skills__item-list
-                            p.skills__value 50
-                                span.skills__percent %
-                            .skills__item--description web design
+                        .skills__item--wrapper
+                            .skills__item-list
+                                p.skills__value 92
+                                    span.skills__percent %
+                                .skills__item--description web design
+
+                        .skills__item--wrapper
+                            .skills__item-list
+                                p.skills__value 68
+                                    span.skills__percent %
+                                .skills__item--description web design
+
+                        .skills__item--wrapper
+                            .skills__item-list
+                                p.skills__value 100
+                                    span.skills__percent %
+                                .skills__item--description web design
+
+                        .skills__item--wrapper
+                            .skills__item-list
+                                p.skills__value 83
+                                    span.skills__percent %
+                                .skills__item--description web design
+
+                        .skills__item--wrapper
+                            .skills__item-list
+                                p.skills__value 50
+                                    span.skills__percent %
+                                .skills__item--description web design
 
 
 
@@ -384,7 +385,7 @@ html
             .container
                 .blockquote__row.row
                     .blockquote__author
-                        h3.blockquote__author--name alexis simpson - CEO & Developer
+                        button.blockquote__author--name alexis simpson - CEO & Developer
                     .blockquote__text
                         h2.blockquote__quote Lorem ipsum dolor sit amet, laudantium, totam rem. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo consequat magna, id molestie ipsum volutpat quis.
                     .blockquote__footer
