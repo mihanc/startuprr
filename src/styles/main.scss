@@ -49,7 +49,7 @@
   }
 
   &__preface {
-    height: 13px;
+    margin: 0;
     color: $head-text-color;
     font-family: ralewaymedium;
     font-size: 18px;
@@ -57,23 +57,52 @@
     text-transform: uppercase;
   }
   &__title {
-    margin: 0;
-    height: 46px;
+    margin: 10px 0 0 0;
     color: $head-text-color;
     font-family: ralewayextrabold;
     font-size: 64px;
-    line-height: 46px;
+    line-height: 55px;
     text-transform: uppercase;
-    letter-spacing: 0.45px;
   }
 
   &__description {
     display: inline-block;
+    margin: $description-margin;
   }
 
   &__start{
-    margin: 10px 0 10px 0;
+    margin: 50px 0 0 0;
     line-height: 20px;
+
+    &:before {
+      content: '';
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      top: 3px;
+      left: -25px;
+      background-image: url("../images/team/left-arrow.png");
+
+      background-repeat: no-repeat;
+    }
+
+    &:after {
+      content: '';
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      top: 3px;
+      right: -25px;
+      background-image: url("../images/team/right-arrow.png");
+
+      background-repeat: no-repeat;
+
+    }
+  }
+  &__img {
+    margin-top: 40px;
   }
 
 }
@@ -96,17 +125,18 @@
 }
 
 .description__tittle {
+  margin: 0;
   width: 662px;
-  padding: 10px;
   background-color: #333333;
   color: white;
   font-family: ralewaymediun;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  line-height: 13px;
+  line-height: 43px;
   text-transform: uppercase;
 }
+
 
 /*q*/
 .description__tittle:first-letter {
@@ -150,7 +180,7 @@
   }
 
   &__logo {
-    padding-top: 15px;
+    margin-top: 15px;
     flex-basis: 400px;
   }
 
@@ -182,7 +212,6 @@
   }
 
   &__loop {
-
     display: flex;
     align-items: center;
 
@@ -222,7 +251,6 @@
 
   &__title {
     text-align: center;
-    line-height: 200%;
   }
 
   &__header {
@@ -232,19 +260,16 @@
     font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
-    line-height: 20px;
     text-transform: uppercase;
 
   }
   &__descriprion {
-    margin: 0;
+    margin: $description-margin;
     color: $description-color;
     font-family: ralewaymedium;
     font-size: 16px;
     font-weight: 500;
-    line-height: 36px;
-
-  }
+      }
 
   &__image {
     display: inline-flex;
@@ -363,12 +388,11 @@
   }
 
   &__description {
-    margin: 0;
+    margin: $description-margin;
     color: #606060;
     font-family: ralewaymedium;
     font-size: 16px;
     font-weight: 500;
-    line-height: 46px;
   }
 
   &__wrapper {
@@ -557,12 +581,11 @@
   }
 
   &__subhead {
-    margin: 0;
+    margin: $description-margin;
     color: #606060;
     font-family: ralewaylight;
     font-size: 16px;
     font-weight: 500;
-    line-height: 46px;
   }
 
   &__item {
@@ -724,16 +747,16 @@
   }
 
   &__description {
-    margin: 0;
+    margin: $description-margin;
     color: $description-color;
     font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
-    line-height: 66px;
   }
 
   &__item {
     display: flex;
+    margin-top: 25px;
     flex-wrap: wrap;
 
     &-list {
@@ -796,17 +819,15 @@
     font-family: ralewayextrabold;
     font-size: 26px;
     font-weight: 400;
-    line-height: 20px;
     text-transform: uppercase;
   }
 
   &__description {
-    margin: 0;
+    margin: $description-margin;
     color: #606060;
     font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
-    line-height: 46px;
   }
 
   &__item {
@@ -892,12 +913,11 @@
   }
 
   &__text {
-    margin: 0;
+    margin: 20px 0 0 0;
     color: #606060;
     font-family: ralewayextrabold;
     font-size: 14px;
     font-weight: 400;
-    line-height: 46px;
     text-transform: uppercase;
   }
 }
@@ -967,12 +987,11 @@
   }
 
   &__description {
-    margin: 0;
+    margin:$description-margin;
     color: $description-color;
     font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
-    line-height: 46px;
   }
 
   &__list {
@@ -1040,20 +1059,22 @@
   }
 
   &__info {
+    margin-top: 30px;
 
     &--role {
       border-bottom: 1px solid #ebebeb;
       margin: 0;
+      padding-bottom: 15px;
       display: inline-block;
       color: #606060;
       font-family: ralewaymedium;
       font-size: 12px;
       font-weight: 500;
-      line-height: 82px;
     }
   }
 
   &__contact {
+    margin-top: 20px;
 
     &--email {
       margin: 0;
@@ -1121,13 +1142,13 @@
   }
 
   &__text {
-    margin: 0;
+    margin: 30px 0 0 0;
     text-align: center;
 
   }
 
   &__quote {
-    margin-top: 30px;
+    margin: 0;
     height: 63px;
     color: #e4e4e4;
     font-family: ralewaylight;
@@ -1245,7 +1266,7 @@
   }
 
   &__text {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: 20px;
     height: 15px;
     color: $description-color;
@@ -1258,6 +1279,7 @@
   &__help {
     margin: 0 20px 0 20px;
     border-bottom: 1px solid #ebebeb;
+    line-height: 30px;
   }
 
   &__small {
@@ -1300,12 +1322,11 @@
   }
 
   &__description {
-    margin: 0;
+    margin: $description-margin;
     color: $description-color;
     font-family: ralewayextrabold;
     font-size: 16px;
     font-weight: 500;
-    line-height: 46px;
   }
 
   &__list {
@@ -1317,15 +1338,17 @@
     display: inline-block;
     margin-left: 9px;
     margin-right: 9px;
-    border: 1px solid grey;
+    width: calc( 25% - 18px);
     height: 428px;
+    border: 1px solid grey;
+
 
     &--head {
       text-align: center;
     }
 
     &--description {
-      padding: 25px 71px 25px 76px;
+      margin: 25px 0 25px 0;
       text-align: center;
     }
 
