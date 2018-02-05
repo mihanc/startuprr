@@ -1,0 +1,54 @@
+.bubble {
+
+  &__row {
+    padding: 72px 0 72px 0;
+  }
+
+  background-color: gray;
+
+  &__image {
+    height: 20px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 40px;
+
+    &--wrapper {
+      display: inline-block;
+    }
+
+    &--head {
+      display: inline;
+      height: 26px;
+      color: $head-text-color;
+      font-family: "Raleway", Arial , sans-serif;
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    span {
+      height: 26px;
+      color: $head-text-color;
+      font-family: "Raleway", Arial , sans-serif;
+      font-size: 26px;
+      font-weight: 400;
+
+    }
+
+    &--btn {
+      width: 151px;
+      height: 40px;
+      padding: 10px;
+      border: none;
+      background-color: $blue-light;
+      color: #e4e4e4;
+      font-family: "Raleway", Arial , sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.skills {
+  position: relative;
+  padding-top: 77px;
+  padding-bottom: 40px;
+  background-color: $head-text-color;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: "";
+    display: block;
+    width: 54px;
+    height: 54px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: $blue-light;
+    border-radius: 2px;
+  }
+
+  &__row {
+    margin-right: -15px;
+    margin-left: -15px;
+    height: 260px;
+  }
+
+  &__title {
+
+    text-align: center;
+
+  }
+
+  &__head {
+    display: inline;
+    height: 19px;
+    color: #e4e4e4;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    @include head-after-before;
+  }
+
+  &__selected {
+    height: 19px;
+    color: $blue-light;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__subhead {
+    margin: $description-margin;
+    color: #606060;
+    font-family: "Raleway-extralight", Arial , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__item {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
+
+    &--wrapper {
+
+    }
+
+    &--description {
+      margin-top: 14px;
+      height: 11px;
+      color: $description-color;
+      font-family: "Raleway", Arial , sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 11px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__item-list {
+    display: inline-block;
+    background-color: inherit;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    font: 40px/100px Times, serif;
+    border: 3px solid $blue-light;
+    border-right: 3px solid white;
+    border-radius: 100px;
+  }
+  &__value {
+    margin: 0;
+    color: #e4e4e4;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 110px;
+    text-transform: uppercase;
+  }
+
+  &__percent {
+    font-size: 16px;
+  }
+}

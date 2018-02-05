@@ -20,7 +20,10 @@
     "gulp-watch": "^5.0.0",
     "run-sequence": "^2.2.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mihanc/startuprr.git"

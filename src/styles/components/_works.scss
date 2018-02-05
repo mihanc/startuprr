@@ -1,0 +1,75 @@
+@import "../helpers/_vars.scss";
+
+.works {
+  display: flex;
+  padding-top: 55px;
+  padding-bottom: 107px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+
+
+
+
+  }
+
+  &__head {
+    display: inline;
+    margin: 0;
+    color: $head-text-color;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    @include head-after-before;
+
+  }
+
+  &__description {
+    margin: $description-margin;
+    color: $description-color;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__item {
+    display: flex;
+    margin-top: 25px;
+    flex-wrap: wrap;
+
+    &-list {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      height: 100%;
+      border: 1px solid white;
+      border-bottom: 0px;
+      width: calc(25% - 2px);
+
+      &--img {
+        width: 100%;
+        max-width: 100%;
+      }
+
+    }
+  }
+
+  &__more {
+    width: 1170px;
+    height: 40px;
+    margin-top: 51px;
+    background-color: $blue-light;
+    border-radius: 10px;
+    font-family: "Raleway", Arial , sans-serif;
+    color: #e4e4e4;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}

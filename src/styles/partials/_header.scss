@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  height: 100px;
+  background-color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+
+  &__row {
+    display: flex;
+    height: 76px;
+  }
+
+  &__logo {
+    margin-top: 15px;
+    flex-basis: 400px;
+  }
+
+  &__list {
+    display: inline-flex;
+    flex-basis: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 45px;
+
+    &__item {
+      display: inline-block;
+      text-decoration: none;
+      color: #606060;
+      font-family: "Raleway", Arial , sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 20px;
+      text-transform: uppercase;
+      padding: 6px;
+      border-radius: 2px;
+
+      &:hover {
+        background-color: $blue-light;
+        color: $hover-text-color;
+        transition: all 0.4s;
+      }
+    }
+  }
+
+  &__loop {
+    display: flex;
+    align-items: center;
+
+    &--img {
+      display: inline-block;
+    }
+
+  }
+}

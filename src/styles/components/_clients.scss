@@ -1,0 +1,16 @@
+.clients {
+
+  background-color: $head-text-color;
+
+  &__row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 25%;
+    height: 160px;
+    text-align: center;
+  }
+}

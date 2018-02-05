@@ -1,0 +1,131 @@
+.facts {
+  position: relative;
+  padding-top: 77px;
+  background-color: $head-text-color;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: "";
+    display: block;
+    width: 54px;
+    height: 54px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: $blue-light;
+    border-radius: 2px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__head {
+    display: inline;
+    color: #e4e4e4;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    @include head-after-before;
+  }
+
+  &__description {
+    margin: $description-margin;
+    color: #606060;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__item {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 75px;
+    text-align: center;
+  }
+
+  &__item-list {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 25%;
+
+  }
+
+  &__number {
+    margin: 0;
+    color: #e4e4e4;
+    font-family: "Raleway-medium", Arial , sans-serif;
+    line-height: 88px;
+    font-size: 80px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &:after, &:before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #484848;
+      border-radius: 2px;
+      transform: rotate(45deg);
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    &:before {
+      margin-left: 0px;
+      margin-right: 20px;
+    }
+    &:hover {
+      opacity: 1;
+      &:after, &:before {
+        background: $blue-light;
+      }
+    }
+
+  }
+
+  &__line {
+    margin-top: 20px;
+    width: 100%;
+
+    &:before {
+      content: "";
+      position: relative;
+      display: inline-block;
+      margin-bottom: 4px;
+      width: 40%;
+      height: 2px;
+      vertical-align: middle;
+      background: #000;
+      background-clip: content-box;
+      border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+
+    &:after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      margin-bottom: 4px;
+      width: 40%;
+      height: 2px;
+      vertical-align: middle;
+      background: #000;
+      background-clip: content-box;
+      border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+
+    &__img {
+      margin-left: 2px;
+    }
+  }
+
+  &__text {
+    margin: 20px 0 0 0;
+    color: #606060;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

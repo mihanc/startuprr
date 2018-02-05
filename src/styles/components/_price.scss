@@ -1,0 +1,159 @@
+.price {
+
+  &__row {
+    padding: 78px 0 78px 0;
+  }
+
+  &__title {
+    text-align: center;
+
+  }
+
+  &__number {
+    display: inline;
+    margin: 0;
+    height: 43px;
+    color: $head-text-color;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    &--sup {
+      display: inline-block;
+      position: relative;
+      top: -10px;
+      font-size: 16px;
+    }
+
+    &:before {
+      content: '';
+      background-image: url("../images/dollar.svg");
+      background-size: cover;
+      background-position-x: -20px;
+      width: 10px;
+      height: 16px;
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      background-color: black;
+      transform: rotate(45deg);
+      position: relative;
+      top: -8px;
+      left: -14px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    height: 15px;
+    color: $description-color;
+    font-family: "Raleway-extralight", Arial , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  &__help {
+    margin: 0 20px 0 20px;
+    border-bottom: 1px solid #ebebeb;
+    line-height: 30px;
+  }
+
+  &__small {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    position: relative;
+    display: inline-flex;
+    top: -25px;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    align-items: center;
+    background-color: $head-text-color;
+    border-radius: 5px;
+    color: #e4e4e4;
+    font-family: "Raleway";
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $blue-light;
+    }
+
+  }
+
+  &__head {
+    display: inline;
+    height: 19px;
+    color: $head-text-color;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    @include head-after-before;
+  }
+
+  &__description {
+    margin: $description-margin;
+    color: $description-color;
+    font-family: "Raleway-medium", Arial , sans-serif;
+    font-weight: 500;
+  }
+
+  &__list {
+    margin-top: 70px;
+
+  }
+
+  &__item {
+    display: inline-block;
+    margin-left: 9px;
+    margin-right: 9px;
+    width: calc(25% - 18px);
+    height: 428px;
+    border: 1px solid grey;
+
+    &--head {
+      text-align: center;
+    }
+
+    &--description {
+      margin: 25px 0 25px 0;
+      text-align: center;
+    }
+
+    &--footer {
+      margin: 0 20px 0 20px;
+      text-align: center;
+      border-top: 1px solid #ebebeb;
+
+    }
+
+    &--btn {
+      margin-top: 15%;
+      width: 118px;
+      height: 39px;
+      background-color: $blue-light;
+      border: none;
+      color: #e4e4e4;
+      font-family: "Raleway", Arial , sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}

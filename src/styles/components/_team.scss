@@ -1,0 +1,142 @@
+.team {
+
+  &__row {
+    padding-top: 73px;
+    padding-bottom: 106px;
+  }
+
+  .arrow {
+    display: inline-block;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__head {
+    display: inline;
+    margin: 0;
+    height: 19px;
+    color: $head-text-color;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+
+  }
+
+  &__description {
+    margin: $description-margin;
+    color: $description-color;
+    font-family: "Raleway-medium", Arial , sans-serif;
+    font-weight: 500;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  &__item {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 25%;
+    border: 1px solid #dedede;
+  }
+
+  &__line {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 2px;
+    box-sizing: border-box;
+    background: rgb(230, 235, 235);
+    border: solid #FFF;
+    border-width: 0 .5em 0;
+  }
+
+  &__photo {
+    position: relative;
+    height: 260px;
+
+    &--image {
+      width: 100%;
+
+      &:hover {
+        opacity: 0;
+        background-color: $blue-light;
+      }
+    }
+
+    &--name {
+      position: relative;
+      display: inline-flex;
+      top: -25px;
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 40px;
+      align-items: center;
+      background-color: $blue-light;
+      border-radius: 5px;
+
+      color: #e4e4e4;
+      font-family: "Raleway", Arial , sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $head-text-color;
+      }
+
+    }
+  }
+
+  &__info {
+    margin-top: 30px;
+
+    &--role {
+      border-bottom: 1px solid #ebebeb;
+      margin: 0;
+      padding-bottom: 15px;
+      display: inline-block;
+      color: #606060;
+      font-family: "Raleway-medium", Arial , sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  &__contact {
+    margin-top: 20px;
+
+    &--email {
+      margin: 0;
+      color: $description-color;
+      font-family: "Raleway-medium", Arial , sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+
+      &:hover {
+        color: $blue-light;
+      }
+
+    }
+
+    &--phone {
+      margin: 0;
+      color: $description-color;
+      font-family: "Raleway-medium", Arial , sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 46px;
+    }
+
+  }
+}
