@@ -6,6 +6,6 @@ header.header
             - var element = ["HOME", "PORTFOLIO", "BLOG", "PAGES", "FEATURES", "MEGA MENU", "CONTACT"];
                 ul.header__list
                     for name in element
-                        li.header__list__item= name
+                        a(href="#").header__list__item= name
             a.header__loop(href="#")
                 img.loop--img(src="../images/header/loop.png" alt="Search")

@@ -63,8 +63,18 @@
 
   &__help {
     margin: 0 20px 0 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ebebeb;
     line-height: 30px;
+
+    &:after {
+      content: 'Monthly';
+      display: inline-block;
+      font-family: Raleway-medium;
+      position: relative;
+      font-size: 14px;
+      top: -8px;
+    }
   }
 
   &__small {

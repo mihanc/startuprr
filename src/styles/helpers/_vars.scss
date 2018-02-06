@@ -8,24 +8,26 @@ $description-margin: 15px 0 0 0;
 @mixin head-after-before {
   &:before {
     content: '';
-    position: relative;
+    //position: relative;
     display: inline-block;
+    margin-right: 20px;
     width: 30px;
     height: 20px;
-    top: 3px;
-    left: -25px;
+    //top: 3px;
+    //left: -25px;
     background-image: url("../images/team/left-arrow.png");
 
     background-repeat: no-repeat;
   }
   &:after {
     content: '';
-    position: relative;
+    //position: relative;
     display: inline-block;
+    margin-left: 20px;
     width: 30px;
     height: 20px;
-    top: 3px;
-    right: -25px;
+    //top: 3px;
+    //right: -25px;
     background-image: url("../images/team/right-arrow.png");
 
     background-repeat: no-repeat;

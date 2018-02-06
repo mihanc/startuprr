@@ -24,6 +24,9 @@
 *, :after, :before {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+}
 
 
 #prev {
@@ -63,8 +66,8 @@
 
   &__ico {
     display: inline-flex;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 5px;
     transform: rotate(-45deg);
     background-color: #e4e4e4;
@@ -112,8 +115,8 @@
   &__ico {
     text-align: center;
     display: inline-flex;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -125,8 +128,8 @@
     }
 
     &--img {
-      width: 27px;
-      height: 24px;
+      width: 17px;
+      height: 14px;
       transform: rotate(45deg);
     }
   }
@@ -170,6 +173,11 @@
     &--nubmer {
       color: white;
       font-family: "Raleway-extralight";
+
+      &:after {
+        content: '';
+        background-image: url("../src/images/like.svg");
+      }
 
     }
 

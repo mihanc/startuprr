@@ -11,8 +11,9 @@
   }
 
   &__logo {
-    margin-top: 15px;
+    display: inline-flex;
     flex-basis: 400px;
+    align-items: center;
   }
 
   &__list {
