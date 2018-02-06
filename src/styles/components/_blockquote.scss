@@ -8,11 +8,11 @@
     left: 50%;
     content: "";
     display: block;
-    width: 54px;
-    height: 54px;
+    width: 40px;
+    height: 40px;
     transform: translate(-50%, -50%) rotate(45deg);
     background: $head-text-color;
-    border-radius: 2px;
+    border-radius: 5px;
   }
 
   &__row {
@@ -28,7 +28,8 @@
       margin: 0;
       padding: 0;
       background-color: #e4e4e4;
-      height: 35px;
+      height: 40px;
+      border-radius: 5px;
       color: #aaaaaa;
       font-family: "Raleway", Arial , sans-serif;
       font-size: 12px;
@@ -38,7 +39,7 @@
   }
 
   &__text {
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
     text-align: center;
 
   }

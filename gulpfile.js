@@ -7,11 +7,13 @@ var gulp          = require('gulp'),
     sourcemaps    = require('gulp-sourcemaps'),
     runSequence   = require('run-sequence'),
     browserSync   = require('browser-sync').create(),
+    imagemin = require('gulp-imagemin');
 
     paths   = {
         js          : './src/js/',
         images      : './src/images/',
         fonts       : './src/fonts/',
+        css         : './build/css/',
         scss        : './src/styles/',
         pug         : './src/pug/',
         dest        : {
@@ -44,6 +46,13 @@ var gulp          = require('gulp'),
             return gulp.src([paths.pug + '*.pug'])
         }
     };
+
+
+gulp.task('compress', function() {
+    gulp.src('./src/images/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('src/images-compressed'))
+});
 
 gulp.task('js', function() {
     sources.jsSrc()

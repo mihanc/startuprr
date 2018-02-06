@@ -1,21 +1,9 @@
 .skills {
   position: relative;
   padding-top: 77px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
   background-color: $head-text-color;
-
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    content: "";
-    display: block;
-    width: 54px;
-    height: 54px;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background: $blue-light;
-    border-radius: 2px;
-  }
+  @include before-block;
 
   &__row {
     margin-right: -15px;
@@ -62,16 +50,17 @@
 
   &__item {
     display: inline-flex;
-    justify-content: space-around;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 50px;
+    justify-content: space-around;
+
 
     &--wrapper {
 
     }
 
     &--description {
-      margin-top: 14px;
+      margin-top: 24px;
       height: 11px;
       color: $description-color;
       font-family: "Raleway", Arial , sans-serif;

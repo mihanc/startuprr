@@ -13,23 +13,29 @@ mixin overlay
             p.overlay__like--nubmer 138
 
 
+mixin facts__item-list(number,factsIco, factsIco_alt ,itemDescription)
+    .facts__item-list
+        p.facts__number= number
+        .facts__line
+            img.facts__line__img(src=factsIco, alt=factsIco_alt)
+
+        p.facts__text= itemDescription
 
 
-mixin price__item
+mixin price__item(planName,price,priceSup)
     .price__item
         .price__item--head
-
-            p.price__name Standart Plan
+            p.price__name= planName
             .price__help
                 img(src="../images/dollar.svg" alt="Image Title")
-                p.price__number 19
-                    sup.price__number--sup 99
-
+                p.price__number= price
+                    sup.price__number--sup= priceSup
         .price__item--description
             p.price__text 5 projects
             p.price__text 5 GB storage
             p.price__text Unlimited Users
             p.price__text 5 GB Bandwith
+            p.price__text Enhanced Security
         .price__item--footer
             button.price__item--btn sign up now
 
@@ -37,3 +43,12 @@ mixin clients__item
     .clients__item
         .clients__image
             img.team__image--logo(src="../images/clients/270x160.png" alt="Icon")
+
+mixin features__item(src, alt, tittle, description)
+    .features__item
+        img.features__image(src=src,alt=alt)
+        .features__text
+            h2.features__text--title= tittle
+            h3.features__text--description= description
+
+

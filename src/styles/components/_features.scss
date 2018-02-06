@@ -5,19 +5,9 @@
   background-color: $head-text-color;
   flex-wrap: wrap;
   flex-direction: column;
+  @include before-block;
 
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    content: "";
-    display: block;
-    width: 54px;
-    height: 54px;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background: $blue-light;
-    border-radius: 2px;
-  }
+
 
   &__title {
     margin: 0 auto;
@@ -50,56 +40,59 @@
     justify-content: space-between;
   }
 
-  &__item {
+  &__list {
     width: 32%;
-
-    &__wrapper {
-      display: flex;
-      margin-top: 25px;
-      align-items: center;
-
-      &:not(:first-child) {
-        margin-top: 50px;
-      }
-
     }
 
-    &__list {
-      display: flex;
-      margin-left: 40px;
-      text-align: left;
-      flex-direction: column;
+  &__item {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
 
-      &__image {
-        display: flex;
-      }
-
-      &__title {
-        display: inline;
-        margin: 0px;
-        color: #e4e4e4;
-        font-family: "Raleway", Arial , sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        text-transform: uppercase;
-      }
-
-      &__description {
-        margin-bottom: 0;
-        margin-top: 10px;
-        color: #7a7a7a;
-        font-family: "Raleway-medium", Arial , sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 24px;
-      }
+    &:not(:first-child) {
+      margin-top: 55px;
     }
   }
+
+  &__text {
+    display: flex;
+    margin-left: 40px;
+    text-align: left;
+    flex-direction: column;
+
+    &--title {
+      display: inline;
+      margin: 0px;
+      color: #e4e4e4;
+      font-family: "Raleway", Arial , sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    &--description {
+      margin-bottom: 0;
+      margin-top: 10px;
+      color: #7a7a7a;
+      font-family: "Raleway-medium", Arial , sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+  }
+
+
+
 
   &__photo {
 
-    &__image {
+    &--image {
 
     }
   }
+
 }
+
+
+
