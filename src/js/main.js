@@ -2,11 +2,11 @@ $(document).ready(function(){
 
     $('.cycle').slick({
         infinite: true,
-        speed: 350,
+        speed: 150,
 
-        slidesToShow: 4,
+        slidesToShow: 1,
 
-        slidesToScroll: 3,
+        slidesToScroll: 1,
 
         appendArrows: $('.arrow'),
 
@@ -30,5 +30,6 @@ $(document).ready(function(){
         nextArrow: '<button id="next" type="button" class="btn btn-juliet"></button>'
 
     });
+
 
 });

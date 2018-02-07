@@ -20,6 +20,13 @@
     padding-bottom: 35px;
   }
 
+  &__item {
+    display: inline-block;
+    width: 25%;
+    height: 160px;
+    text-align: center;
+  }
+
   &__author {
     text-align: center;
 
