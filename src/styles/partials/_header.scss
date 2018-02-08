@@ -1,19 +1,42 @@
 .header {
+  position: relative;
   display: flex;
   height: 100px;
   background-color: whitesmoke;
+  border-bottom: 1px solid gainsboro;
   align-items: center;
   justify-content: center;
 
+  //@media (min-width: 320px) and (max-width: 425px) {
+  //  position: absolute;
+  //  visibility: hidden;
+  //}
+
   &__row {
+    position: relative;
     display: flex;
-    height: 76px;
+
+    @media (max-width: $lg)  {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+  }
+  &__image {
+    @media (max-width: $lg)  {
+      display: none;
+    }
   }
 
   &__logo {
     display: inline-flex;
-    flex-basis: 400px;
+    flex-basis: 40%;
     align-items: center;
+
+    @media (max-width: $lg)  {
+      display: none;
+    }
+
   }
 
   &__list {
@@ -22,12 +45,15 @@
     justify-content: space-evenly;
     align-items: center;
     line-height: 45px;
+    @media (max-width: $lg)  {
+      display: none;
+    }
 
     &__item {
       display: inline-block;
       text-decoration: none;
       color: #606060;
-      font-family: "Raleway", Arial , sans-serif;
+      font-family: "Raleway", Arial, sans-serif;
       font-size: 13px;
       font-weight: 600;
       line-height: 20px;
@@ -50,6 +76,89 @@
     &--img {
       display: inline-block;
     }
+    @media (max-width: $lg)  {
+      display: none;
+    }
+  }
+}
+
+.hamburger {
+  background: none;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+  @media (min-width: $lg)  {
+    display: none;
+  }
+}
+
+.cross {
+  background: none;
+  top: 0px;
+  right: 0;
+  padding: 7px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+  @media (min-width: $lg)  {
+    display: none;
+  }
+}
+
+.menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  @media (min-width: 769px)  {
+    display: none;
+  }
+
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+  }
+
+  &__item{
+    display: block;
+    padding: 15px 0 15px 0;
+    border-bottom: #dddddd 1px solid;
+    &:hover {
+      display: block;
+      background: whitesmoke;
+      padding: 15px 0 15px 0;
+      border-bottom: #dddddd 1px solid;
+    }
 
   }
+  &__link {
+    text-decoration: none;
+    margin: 0px;
+    color: #666;
+
+    &:hover {
+      color: #666;
+      text-decoration: none;
+    }
+  }
+
 }
