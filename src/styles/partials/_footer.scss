@@ -10,32 +10,80 @@
   &__head {
     text-align: center;
   }
+  $color: #778899;
+  $percent: 5%;
+  $percentStep: 5;
+  $fontSize: 76px;
+  $fontSizeStep: 10;
+
+
 
   &__social {
     margin-top: 50px;
     padding-bottom: 77px;
 
     &--wrapper {
-      margin: 60px 0 60px 0;
+      margin: 60px 0;
+    }
+
+    @each $social, $color in (fb, $fb),
+            (tw, $tw),
+            (pt, $pt),
+            (rss, $rss),
+            (vim, $vim),
+            (deva, $deva),
+            (dribbl, $dribbl),
+            (linked, $linked),
+            (stumbl, $stumbl),
+                  {
+      &--icon-#{$social} {
+
+        &:hover {
+          background-color: $color;
+        }
+
+        padding: 7px;
+        margin-right: 20px;
+        border: 1px solid #606060;
+        border-radius: 5px;
+        height: 42px;
+
+        @media (max-width: $sm) {
+          margin-left: 20px;
+          margin-bottom: 20px;
+        }
+        @media (min-width: 330px) and (max-width: $sm+1) {
+          margin: 0 40px 40px 40px;
+        }
+
+      }
     }
     &--icon {
       padding: 7px;
-      margin-right: 10px;
+      margin-right: 20px;
       border: 1px solid #606060;
       border-radius: 5px;
       height: 42px;
 
-      &:hover {
-        background-color: $blue-light;
-      }
+
 
     }
+    &--ico {
+      padding: 0;
+    }
+
+
 
   }
   &__map {
     background-image: url("../images/footer/map.png");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: $lg)  {
+      text-align: center;
+    }
   }
 
   .form {
@@ -45,27 +93,34 @@
       margin-left: 136px;
       margin-bottom: 81px;
       background-color: whitesmoke;
-      border: 1px solid #85e694;
+      border: 1px solid gray;
       border-radius: 8px;
       font-family: 'Helvetica Neue', Helvetica, sans-serif;
       text-decoration: none;
       vertical-align: middle;
       padding: 20px;
-      width: 368px;
+      width: 300px;
+      @media (max-width: $lg)  {
+        margin-left: 0;
+      }
+      @media (max-width: $sm)  {
+        display: none;
+      }
     }
     &__field {
       border: 1px solid #738777;
-      background: #ffffff;
+      background: #f5f5f5;
       border-radius: 4px;
       color: #0097bd;
       padding: 8px;
       margin-bottom: 20px;
-      width: 320px;
+      width: 95%;
     }
 
     &__textarea {
-      width: 320px;
+      width: 95%;
       height: 120px;
+      background-color: #f5f5f5;
       resize: none;
     }
 
@@ -75,7 +130,7 @@
       text-shadow: #fdf2e4 0 1px 0;
     }
     &__submit {
-      width: 320px;
+      width: 95%;
       height: 40px;
       border: none;
       background-color: $blue-light;
@@ -95,5 +150,11 @@
     font-size: 14px;
     font-weight: 400;
 
+
+    @media (max-width: $sm) {
+     font-size: 9px;
+    }
+
   }
 }
+

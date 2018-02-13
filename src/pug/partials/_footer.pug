@@ -3,27 +3,38 @@ footer.footer
         .footer__head
             img.footer__logo(src="../images/footer/new-logo.png" alt="Icon")
             .footer__social--wrapper
-                .footer__social--ico
-                    img.footer__social--icon(src="../images/footer/facebook.svg" alt="Icon")
-                    img.footer__social--icon(src="../images/footer/twitter.svg" alt="Icon")
-                    img.footer__social--icon(src="../images/footer/pinterest.svg" alt="Icon")
-                    img.footer__social--icon(src="../images/footer/rss.svg" alt="Icon")
-                    img.footer__social--icon(src="../images/footer/vimeo.svg" alt="Icon")
-                    img.footer__social--icon(src="../images/footer/deviantart.svg" alt="Icon")
-                    img.footer__social--icon(src="../images/footer/dribbble.svg" alt="Icon")
-                    img.footer__social--icon(src="../images/footer/linkedin.svg" alt="Icon")
-                    img.footer__social--icon(src="../images/footer/stumbleupon.svg" alt="Icon")
+                ul.footer__social--ico
+
+
+
+
+
+                    a(href="#",title="Facebook")
+                        img.footer__social--icon-fb(src="../images/footer/facebook.svg" alt="Icon")
+                    a(href="#",title="Twitter")
+                        img.footer__social--icon-tw(src="../images/footer/twitter.svg" alt="Icon")
+                    a(href="#",title="Pinterest")
+                        img.footer__social--icon-pt(src="../images/footer/pinterest.svg" alt="Icon")
+                    a(href="#",title="RSS")
+                        img.footer__social--icon-rss(src="../images/footer/rss.svg" alt="Icon")
+                    a(href="#",title="Vimeo")
+                        img.footer__social--icon-vim(src="../images/footer/vimeo.svg" alt="Icon")
+                    a(href="#",title="DevianArt")
+                        img.footer__social--icon-deva(src="../images/footer/deviantart.svg" alt="Icon")
+                    a(href="#",title="Dribble")
+                        img.footer__social--icon-dribbl(src="../images/footer/dribbble.svg" alt="Icon")
+                    a(href="#",title="Linkedin")
+                        img.footer__social--icon-linked(src="../images/footer/linkedin.svg" alt="Icon")
+                    a(href="#",title="Stumbleupon")
+                        img.footer__social--icon-stumbl(src="../images/footer/stumbleupon.svg" alt="Icon")
         .footer__map
             form.form__container
-                .form-title
-                    h2
                 input.form__field(type='text', name='firstname', placeholder='Name')
                 br
                 input.form__field(type='text', name='email', placeholder='Email')
                 br
                 textarea.form__textarea(placeholder='Ваше сообщение')
                 br
-                .submit-container
-                    button.form__submit Submit Message
+                button.form__submit Submit Message
         .footer__copyryght
             h2.footer__copyright-text © 2014 Startuprr, All Rights Reserved.

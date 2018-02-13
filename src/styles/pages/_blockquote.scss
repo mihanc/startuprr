@@ -30,18 +30,27 @@
   &__author {
     text-align: center;
 
-    &--name {
+    &--info {
       display: inline;
       margin: 0;
-      padding: 0;
+      padding: 10px;
       background-color: #e4e4e4;
       height: 40px;
       border-radius: 5px;
-      color: #aaaaaa;
+      border: none;
+      color: $blue-light;
       font-family: "Raleway", Arial , sans-serif;
       font-size: 12px;
       font-weight: 500;
       text-transform: uppercase;
+    }
+
+    &--position {
+      font-style: italic;
+      color: #aaa;
+      font-size: 13px;
+      font-family: "Raleway-medium", Arial , sans-serif;
+      text-transform: initial;
     }
   }
 
@@ -53,12 +62,12 @@
 
   &__quote {
     margin: 0;
-    height: 63px;
     color: #e4e4e4;
     font-family: "Raleway-extralight", Arial , sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 34px;
+    word-break: break-all;
 
     &:before {
       content: "\201C";
@@ -68,10 +77,18 @@
       content: '\201D';
     }
 
+    @media (max-width: 425px)  {
+     font-size: 14px;
+      line-height: 24px;
+
+    }
   }
   &__footer {
-    margin-top: 30px;
     text-align: center;
+
+    @media (max-width: $sm) {
+      margin-top: 20px;
+    }
   }
 
   &__slide {
@@ -95,7 +112,23 @@
     }
   }
   &__btn {
-    width: 12px;
-    height: 14px;
+
+
+    &--prev {
+      margin-right: 10px ;
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-color: #383838;
+    }
+
+    &--next {
+      margin-left: 10px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-color: #383838;
+    }
+
   }
 }

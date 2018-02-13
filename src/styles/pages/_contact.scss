@@ -1,0 +1,59 @@
+.contact {
+  background-color: $blue-light;
+  text-align: center;
+
+  &__head {
+    margin: 0;
+    color: #e4e4e4;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    @media (max-width: $sm) {
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+  }
+
+  &__row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    //justify-content: space-between;
+
+    @media (max-width: $md) {
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+
+    @media (max-width: $md) {
+      margin: 0;
+    }
+  }
+
+  &__btn {
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    color: #606060;
+
+    &:first-child {
+      margin-right: 10px;
+
+      @media (max-width: $sm)  {
+        margin: 0;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: $sm)  {
+      margin: 15px 20px 0 20px;
+      height: 35px;
+
+    }
+  }
+}

@@ -22,10 +22,11 @@ mixin facts__item-list(number,factsIco, factsIco_alt ,itemDescription)
         p.facts__text= itemDescription
 
 
+
 mixin price__item(planName,price,priceSup)
     .price__item
         .price__item--head
-            p.price__name= planName
+            p.price__name.price__name--selected= planName
             .price__help
                 img(src="../images/dollar.svg" alt="Image Title")
                 p.price__number= price
@@ -37,12 +38,12 @@ mixin price__item(planName,price,priceSup)
             p.price__text 5 GB Bandwith
             p.price__text Enhanced Security
         .price__item--footer
-            button.price__item--btn sign up now
+            button.price__item--btn.button sign up now
 
-mixin clients__item
-    .clients__item
-        .clients__image
-            img.team__image--logo(src="../images/clients/270x160.png" alt="Icon")
+mixin clients__item(clients__src, clients__alt)
+    img.clients__image--logo(src=clients__src alt=clients__alt)
+
+
 
 mixin features__item(src, alt, tittle, description)
     .features__item
@@ -50,5 +51,16 @@ mixin features__item(src, alt, tittle, description)
         .features__text
             h2.features__text--title= tittle
             h3.features__text--description= description
+
+
+mixin blockquote__item(authorname, authorposition, quote)
+    .blockquote__item
+        .blockquote__author
+            button.blockquote__author--info.button
+                span.blockquote__author--name= authorname
+                span.blockquote__author--position= authorposition
+        .blockquote__text
+            h2.blockquote__quote= quote
+
 
 

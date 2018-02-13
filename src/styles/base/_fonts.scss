@@ -1,4 +1,3 @@
-
 @each $font-name, $font-folder, $file-name, $font-weight, $font-style in ("Raleway", releway, 'raleway-extrabold', 800, bold),
         ("Raleway-medium", releway, 'raleway-medium', 500, normal),
         ("Raleway-extralight", releway, 'raleway-extralight', 200, normal) {
@@ -16,34 +15,3 @@
 }
 
 
-
-
-
-//@font-face {
-//  font-family: 'ralewayextrabold';
-//  src: url("../../fonts/Releway-extrabold.woff2") format('woff2'),
-//  url("../../fonts/Releway-extrabold.woff") format('woff');
-//  font-weight: normal;
-//  font-style: normal;
-//
-//}
-//
-//@font-face {
-//  font-family: 'ralewaymedium';
-//  src: url("../../fonts/Raleway-medium.woff2");
-//  src: url("../../fonts/Raleway-medium.woff2") format('woff2'),
-//  url("../../fonts/Raleway-medium.woff") format('woff');
-//  font-weight: normal;
-//  font-style: normal;
-//
-//}
-//
-//@font-face {
-//  font-family: 'ralewaylight';
-//  src: url("../../fonts/Raleway-medium.woff2");
-//  src: url("../../fonts/Releway-extralight.woff2") format('woff2'),
-//  url("../../fonts/Releway-extralight.woff") format('woff');
-//  font-weight: normal;
-//  font-style: normal;
-//
-//}

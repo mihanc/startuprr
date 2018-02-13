@@ -2,44 +2,26 @@ $blue-light: #00a99d;
 $hover-text-color: #e4e4e4;
 $head-text-color: #383838;
 $description-color: #8a8a8a;
-$gutter: 15px;
 $description-margin: 10px 0 0 0;
+$gutter: 15px;
+
+$breakpoint: 768px; // момент переключения навигационного меню
+
+$sm: 544px; // Small screen / phone
+$md: 768px; // Medium screen / tablet
+$lg: 992px; // Large screen / desktop
+$xl: 1200px; // Extra large screen desktop
+$xxl: 1440px; // Wide desktop
+
+// Брендовые цвета
+$fb: #3b5998; // facebook
+$tw: #55acee; // twitter
+$pt: #c8232c; // pinterest
+$rss: #ed812b; // rss
+$vim: #3f729b; // vimeo
+$deva: #4e6252; // devianart
+$dribbl: #ea4c89; //dribbble
+$linked: #007bb6; //linkedin
+$stumbl: #EB4924; //stumbleupon
 
 
-@mixin before-block {
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    content: "";
-    background-image: url("../../images/key.png");
-    display: block;
-    width: 40px;
-    height: 40px;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background: $blue-light;
-    border-radius: 5px;
-  }
-}
-
-@mixin head-after-before {
-  &:before {
-    content: '';
-    display: inline-block;
-    margin-right: 20px;
-    width: 30px;
-    height: 20px;
-    background-image: url("../images/team/left-arrow.png");
-    background-repeat: no-repeat;
-  }
-  &:after {
-    content: '';
-    display: inline-block;
-    margin-left: 20px;
-    width: 30px;
-    height: 20px;
-    background-image: url("../images/team/right-arrow.png");
-    background-repeat: no-repeat;
-
-  }
-}

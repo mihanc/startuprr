@@ -1,6 +1,7 @@
 .facts {
   position: relative;
   padding-top: 77px;
+  padding-bottom: 77px;
   background-color: $head-text-color;
   @include before-block;
 
@@ -9,41 +10,40 @@
   }
 
   &__head {
-    display: inline;
     color: #e4e4e4;
-    font-family: "Raleway", Arial , sans-serif;
-    font-size: 26px;
-    font-weight: 400;
-    text-transform: uppercase;
-    @include head-after-before;
-  }
 
-  &__description {
-    margin: $description-margin;
-    color: #606060;
-    font-family: "Raleway", Arial , sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+    @include head-after-before;
+
   }
 
   &__item {
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 95px;
+    margin-top: 30px;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   &__item-list {
-    margin-right: 15px;
-    margin-left: 15px;
-    width: 25%;
+    margin-right: 13px;
+    margin-left: 13px;
+    width: calc(25% - 26px);
+
+    @media (max-width: $md) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: calc(50% - 30px);
+    }
+
+    @media (max-width: $sm) {
+      width: 100%;
+    }
 
   }
 
   &__number {
     margin: 0;
     color: #e4e4e4;
-    font-family: "Raleway-medium", Arial , sans-serif;
+    font-family: "Raleway-medium", Arial, sans-serif;
     line-height: 88px;
     font-size: 80px;
     font-style: italic;
@@ -72,6 +72,10 @@
       }
     }
 
+    @media (max-width: $sm) {
+      font-size: 60px;
+    }
+
   }
 
   &__line {
@@ -86,7 +90,7 @@
       width: 40%;
       height: 2px;
       vertical-align: middle;
-      background: #000;
+      background: #606060;
       background-clip: content-box;
       border-bottom: 1px solid rgba(255, 255, 255, .5);
     }
@@ -99,7 +103,7 @@
       width: 40%;
       height: 2px;
       vertical-align: middle;
-      background: #000;
+      background: #606060;
       background-clip: content-box;
       border-bottom: 1px solid rgba(255, 255, 255, .5);
     }
@@ -112,9 +116,14 @@
   &__text {
     margin: 10px 0 0 0;
     color: #606060;
-    font-family: "Raleway", Arial , sans-serif;
+    font-family: "Raleway", Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+
+    @media (max-width: $sm) {
+      font-size: 12px;
+    }
+
   }
 }

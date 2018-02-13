@@ -1,49 +1,53 @@
 @import "base/_grid.scss";
 @import "base/_fonts.scss";
 @import "helpers/_vars.scss";
+@import "helpers/_mixins.scss";
+@import "components/_buttons.scss";
+@import "components/_header.scss";
 @import "partials/_header.scss";
 @import "partials/_footer.scss";
-@import "components/_banner.scss";
-@import "components/_offer.scss";
-@import "components/_features.scss";
-@import "components/_more-features.scss";
-@import "components/_skills.scss";
-@import "components/_works.scss";
-@import "components/_facts.scss";
-@import "components/_contact.scss";
-@import "components/_team.scss";
-@import "components/_blockquote.scss";
-@import "components/_clients.scss";
-@import "components/_price.scss";
-@import "components/_bubble.scss";
+@import "pages/banner";
+@import "pages/offer";
+@import "pages/features";
+@import "pages/more-features";
+@import "pages/skills";
+@import "pages/works";
+@import "pages/facts";
+@import "pages/contact";
+@import "pages/team";
+@import "pages/blockquote";
+@import "pages/clients";
+@import "pages/price";
+@import "pages/bubble";
 
-
-
-
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
 
 *, :after, :before {
   box-sizing: border-box;
 }
-body {
-  margin: 0;
-}
+
+
+
 
 
 #prev {
   display: inline-block;
   border: none;
-  width: 29px;
-  height: 16px;
-  background-image: url("../images/team/left-arrow.png");
-  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/team/arrow.svg");
+  background-color: black;
 }
 
 #next {
   border: none;
-  width: 29px;
-  height: 16px;
-  background-image: url("../images/team/right-arrow.png");
-  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  //background-image: url("../images/team/left-arrow.png");
+  background-color: black;
 }
 
 
@@ -56,8 +60,9 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  height: 101%;
   width: 100%;
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -86,7 +91,7 @@ body {
   }
 
   &:hover {
-    opacity: 1;
+    opacity: .8;
   }
 
 }
@@ -142,12 +147,13 @@ body {
 
   &__head {
     display: inherit;
-    margin: 45px 0 0 0;
+    //margin: 45px 0 0 0;
     height: 16px;
     color: #e4e4e4;
     font-family: "Raleway", Arial , sans-serif;
     font-size: 16px;
     font-weight: 400;
+
   }
 
   &__description {
@@ -164,6 +170,7 @@ body {
   &__like {
     display: flex;
     align-items: center;
+    margin-top: 15px;
 
     &--img {
       width: 17px;
@@ -173,6 +180,7 @@ body {
     &--nubmer {
       color: white;
       font-family: "Raleway-extralight";
+      margin: 0;
 
       &:after {
         content: '';
@@ -184,20 +192,10 @@ body {
   }
 
   &:hover {
-    opacity: 1;
+    opacity: .8;
+
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .slick-list {
   overflow: hidden;
@@ -211,5 +209,9 @@ body {
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (max-width: $sm) {
+    font-size: 20px;
+  }
 }
 
