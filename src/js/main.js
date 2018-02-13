@@ -1,18 +1,27 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $( ".cross" ).hide();
-    $( ".menu" ).hide();
-    $( ".hamburger" ).click(function() {
-        $( ".menu" ).slideToggle( "slow", function() {
-            $( ".hamburger" ).hide();
-            $( ".cross" ).show();
+
+    $(".header__loop").click(function(e){
+        e.preventDefault();
+        if($(".header__input").hasClass('header__input--hidden')) $(".header__input").toggleClass("header__input--visible");
+
+    });
+
+
+
+    $(".cross").hide();
+    $(".menu").hide();
+    $(".hamburger").click(function () {
+        $(".menu").slideToggle("slow", function () {
+            $(".hamburger").hide();
+            $(".cross").show();
         });
     });
 
-    $( ".cross" ).click(function() {
-        $( ".menu" ).slideToggle( "slow", function() {
-            $( ".cross" ).hide();
-            $( ".hamburger" ).show();
+    $(".cross").click(function () {
+        $(".menu").slideToggle("slow", function () {
+            $(".cross").hide();
+            $(".hamburger").show();
         });
     });
 
@@ -26,8 +35,8 @@ $(document).ready(function(){
 
         appendArrows: $('.arrow'),
 
-        prevArrow: '<button id="prev" type="button" class="btn btn-juliet"> </button>',
-        nextArrow: '<button id="next" type="button" class="btn btn-juliet"></button>',
+        prevArrow: '.team__btn--prev',
+        nextArrow: '.team__btn--next',
 
         responsive: [
 
@@ -66,14 +75,12 @@ $(document).ready(function(){
 
         slidesToScroll: 1,
 
-        appendArrows: $('.arrow'),
+        appendArrows: $('.arrow2'),
 
-        prevArrow: '<button id="prev" type="button" class="btn btn-juliet"> </button>',
-        nextArrow: '<button id="next" type="button" class="btn btn-juliet"></button>',
+        prevArrow: '.blockquote__btn--prev',
+        nextArrow: '.blockquote__btn--next',
 
     });
-
-
 
 
     $('.cycle2').slick({
@@ -83,8 +90,10 @@ $(document).ready(function(){
         slidesToShow: 4,
 
         slidesToScroll: 3,
+        arrows:false,
         lazyLoad: 'ondemand',
-        appendArrows: $('.arrow'),
+
+        appendArrows: $('.arrow3'),
 
         prevArrow: '<button id="prev" type="button" class="btn btn-juliet"> </button>',
         nextArrow: '<button id="next" type="button" class="btn btn-juliet"></button>',
@@ -92,21 +101,21 @@ $(document).ready(function(){
         responsive: [
 
             {
-                breakpoint: 1025,
+                breakpoint: 1272,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 769,
+                breakpoint: 976,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 426,
+                breakpoint: 664,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

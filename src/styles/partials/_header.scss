@@ -1,7 +1,7 @@
 .header {
   position: relative;
   display: flex;
-  height: 100px;
+  height: 70px;
   background-color: whitesmoke;
   border-bottom: 1px solid gainsboro;
   align-items: center;
@@ -16,14 +16,14 @@
     position: relative;
     display: flex;
 
-    @media (max-width: $lg)  {
+    @media (max-width: $lg+30px)  {
       display: flex;
       justify-content: flex-end;
     }
 
   }
   &__image {
-    @media (max-width: $lg)  {
+    @media (max-width: $lg+30px)  {
       display: none;
     }
   }
@@ -33,7 +33,7 @@
     flex-basis: 40%;
     align-items: center;
 
-    @media (max-width: $lg)  {
+    @media (max-width: $lg+30px)  {
       display: none;
     }
 
@@ -41,11 +41,11 @@
 
   &__list {
     display: inline-flex;
-    flex-basis: 60%;
+    flex-basis: 70%;
     justify-content: space-evenly;
     align-items: center;
     line-height: 45px;
-    @media (max-width: $lg)  {
+    @media (max-width: $lg+30px)  {
       display: none;
     }
 
@@ -76,9 +76,29 @@
     &--img {
       display: inline-block;
     }
-    @media (max-width: $lg)  {
+    @media (max-width: $lg+30px)  {
       display: none;
     }
+  }
+
+  &__input {
+    &--hidden {
+      display: none;
+      height: 100px;
+      width: 100px;
+    }
+
+    &--visible {
+      display: block;
+      margin: auto;
+      margin-left: 20px;
+      margin-right: 10px;
+      height: 35px;
+      width: 200px;
+      border-radius: 2px;
+      box-shadow: none;
+    }
+
   }
 }
 
@@ -95,7 +115,7 @@
   cursor: pointer;
   outline: none;
   z-index: 10000000000000;
-  @media (min-width: $lg)  {
+  @media (min-width: $lg+30px)  {
     display: none;
   }
 }
@@ -108,12 +128,12 @@
   color: #999;
   border: 0;
   font-size: 3em;
-  line-height: 65px;
+  line-height: 45px;
   font-weight: bold;
   cursor: pointer;
   outline: none;
   z-index: 10000000000000;
-  @media (min-width: $lg)  {
+  @media (min-width: $lg+30px)  {
     display: none;
   }
 }
