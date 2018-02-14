@@ -11,6 +11,34 @@ mixin overlay
         .overlay__like
             img.overlay__like--img(src="../images/like.svg" alt="Icon")
             p.overlay__like--nubmer 138
+            
+
+
+mixin team-item(team__photo, team__name, team__role, team__email, team__phone )
+    .team__item
+        .team__photo
+            img.team__photo--image(src=team__photo alt="Icon")
+            .team__overlay2
+                .team__overlay2--ico
+                    img.team__overlay2--img(src="../images/team/social/facebook-logo.svg" alt="Icon")
+                .team__overlay2--ico
+                    img.team__overlay2--img(src="../images/team/social/twitter.svg" alt="Icon")
+                .team__overlay2--ico
+                    img.team__overlay2--img(src="../images/team/social/google-plus.svg" alt="Icon")
+                .team__overlay2--ico
+                    img.team__overlay2--img(src="../images/team/social/vimeo.svg" alt="Icon")
+                .team__overlay2--ico
+                    img.team__overlay2--img(src="../images/team/social/dribble.svg" alt="Icon")
+
+            p.team__photo--name=team__name
+
+        .team__info
+            p.team__info--role=team__role
+
+            .team__contact
+                p.team__contact--email=team__email
+                p.team__contact--phone=team__phone
+
 
 
 mixin facts__item-list(number,factsIco, factsIco_alt ,itemDescription)
@@ -39,6 +67,7 @@ mixin price__item(planName,price,priceSup)
             p.price__text Enhanced Security
         .price__item--footer
             button.price__item--btn.button sign up now
+
 
 mixin clients__item(clients__src, clients__alt)
     img.clients__image--logo(src=clients__src alt=clients__alt)

@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
 
+
     $(".header__loop").click(function(e){
         e.preventDefault();
         if($(".header__input").hasClass('header__input--hidden')) $(".header__input").toggleClass("header__input--visible");
@@ -84,16 +85,12 @@ $(document).ready(function () {
 
 
     $('.cycle2').slick({
-        infinite: true,
-        speed: 350,
+        dots: true,
+        dotsClass: 'clients__dots',
 
-        slidesToShow: 4,
 
-        slidesToScroll: 3,
+        slidesToShow: 3,
         arrows:false,
-        lazyLoad: 'ondemand',
-
-        appendArrows: $('.arrow3'),
 
         prevArrow: '<button id="prev" type="button" class="btn btn-juliet"> </button>',
         nextArrow: '<button id="next" type="button" class="btn btn-juliet"></button>',

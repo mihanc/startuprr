@@ -58,18 +58,16 @@
     &--subhead {
       margin: 0;
       color: #aaaaaa;
-      margin-top: 10px;
+      margin-top: 5px;
       font-family: "Raleway-extralight", Arial , sans-serif;
       font-size: 12px;
-      font-weight: 500;
     }
 
     &--description {
       margin: 10px 0 0 0;
       color: #7a7a7a;
-      font-family: "Raleway-extralight", Arial , sans-serif;
+      font-family: "Raleway-medium", Arial , sans-serif;
       font-size: 14px;
-      font-weight: 500;
       line-height: 20px;
       word-break: break-all;
       @media (max-width: $sm) {

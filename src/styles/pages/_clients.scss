@@ -22,3 +22,17 @@
 
   }
 }
+
+.clients__dots {
+  padding: 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  button {
+    background-color: inherit;
+    border: none;
+  }
+}

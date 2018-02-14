@@ -2,11 +2,9 @@ doctype html
 html(lang='en')
     head
         include meta/_head
-        include meta/_scripts
         include mixins/mixins.pug
 
     body
-
         include components/_banner.pug
         include partials/_header
         include components/_offer
@@ -22,6 +20,8 @@ html(lang='en')
         include components/_price
         include components/_bubble
         include partials/_footer
+
+        include meta/_scripts
 
 
 
