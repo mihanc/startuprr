@@ -84,12 +84,12 @@ $(document).ready(function () {
     });
 
 
-    $('.cycle2').slick({
+    $('.clients__slider').slick({
         dots: true,
         dotsClass: 'clients__dots',
 
 
-        slidesToShow: 3,
+        slidesToShow: 4,
         arrows:false,
 
         prevArrow: '<button id="prev" type="button" class="btn btn-juliet"> </button>',

@@ -1,6 +1,6 @@
 
 .footer {
-  background-color: $head-text-color;
+  background-color: $dark;
 
   &__row {
     padding-top: 50px;
@@ -16,12 +16,22 @@
   $fontSize: 76px;
   $fontSizeStep: 10;
 
+  &__map {
+    background-image: url("../images/footer/map.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  &__social {
+    @media (max-width: $lg) {
+      text-align: center;
+    }
+  }
+
+  .social {
     margin-top: 50px;
     padding-bottom: 77px;
 
-    &--wrapper {
+    &__wrapper {
       margin: 60px 0;
     }
 
@@ -33,9 +43,8 @@
             (deva, $deva),
             (dribbl, $dribbl),
             (linked, $linked),
-            (stumbl, $stumbl),
-                  {
-      &--icon-#{$social} {
+            (stumbl, $stumbl), {
+      &__icon-#{$social} {
 
         &:hover {
           background-color: $color;
@@ -57,31 +66,15 @@
 
       }
     }
-    &--icon {
+    &__icon {
       padding: 7px;
       margin-right: 20px;
       border: 1px solid #606060;
       border-radius: 5px;
       height: 42px;
-
-
-
     }
-    &--ico {
+    &__list {
       padding: 0;
-    }
-
-
-
-  }
-  &__map {
-    background-image: url("../images/footer/map.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    @media (max-width: $lg)  {
-      text-align: center;
     }
   }
 
@@ -99,10 +92,10 @@
       vertical-align: middle;
       padding: 20px;
       width: 300px;
-      @media (max-width: $lg)  {
+      @media (max-width: $lg) {
         margin-left: 0;
       }
-      @media (max-width: $sm)  {
+      @media (max-width: $sm) {
         display: none;
       }
     }
@@ -134,7 +127,7 @@
       border: none;
       background-color: $blue-light;
       color: #e4e4e4;
-      font-family: "Raleway", Arial , sans-serif;
+      font-family: "Raleway", Arial, sans-serif;
       font-size: 13px;
       font-weight: 400;
       text-transform: uppercase;
@@ -145,13 +138,12 @@
     margin-top: 57px;
     text-align: center;
     color: #cccccc;
-    font-family: "Raleway", Arial , sans-serif;
+    font-family: "Raleway", Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
 
-
     @media (max-width: $sm) {
-     font-size: 9px;
+      font-size: 9px;
     }
 
   }

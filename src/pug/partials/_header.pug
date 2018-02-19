@@ -2,45 +2,24 @@ header.header
     .container
         .header__row
             a(name='yakor')
-            button.hamburger ☰
+            button.hamburger
+                img.line(src="../images/header/hamburger.svg")
             button.cross ˟
             nav.menu
-                - var element = ["HOME", "PORTFOLIO", "BLOG", "PAGES", "FEATURES", "MEGA MENU", "CONTACT"];
-                    ul.menu__list
-                        for name in element
-                            a(href='#').menu__link
-                                li.menu__item=name
+                ul.menu__list
+                    each element in ["HOME", "PORTFOLIO", "BLOG", "PAGES", "FEATURES", "MEGA MENU", "CONTACT"]
+                        a(href='#').menu__link
+                            li.menu__item=element
+
+
 
             nav.header__logo
                 img.header__image(src="../images/header/logo.png" alt="Image Title")
-            - var element = ["HOME", "PORTFOLIO", "BLOG", "PAGES", "FEATURES", "MEGA MENU", "CONTACT"];
-                ul.header__list
-                    for name in element
-                        a(href="#").header__list__item= name
+            ul.header__list
+               each element in ["HOME", "PORTFOLIO", "BLOG", "PAGES", "FEATURES", "MEGA MENU", "CONTACT"]
+                   a(href="#").header__list__item= element
 
             input(type="input").header__input.header__input--hidden
 
             a.header__loop(href="#")
                 img.loop--img(src="../images/header/loop.png" alt="Search")
-
-                //ul
-                //    a(href='#')
-                //        li LINK ONE
-                //    a(href='#')
-                //        li LINK TWO
-                //    a(href='#')
-                //        li LINK THREE
-                //    a(href='#')
-                //        li LINK FOUR
-                //    a(href='#')
-                //        li LINK FIVE
-
-
-            //nav.header__logo
-            //    img.header__image(src="../images/header/logo.png" alt="Image Title")
-            // - var element = ["HOME", "PORTFOLIO", "BLOG", "PAGES", "FEATURES", "MEGA MENU", "CONTACT"];
-            //     ul.header__list
-            //         for name in element
-            //             a(href="#").header__list__item= name
-            //a.header__loop(href="#")
-            //    img.loop--img(src="../images/header/loop.png" alt="Search")

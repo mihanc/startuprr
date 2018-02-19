@@ -3,6 +3,7 @@ var gulp          = require('gulp'),
     cleanCSS      = require('gulp-clean-css'),
     pug           = require('gulp-pug'),
     concat        = require('gulp-concat'),
+    csscomb       = require('gulp-csscomb');
     autoprefixer  = require('gulp-autoprefixer'),
     sourcemaps    = require('gulp-sourcemaps'),
     runSequence   = require('run-sequence'),
@@ -107,6 +108,13 @@ gulp.task('server',     function() {
         port: 8000,
         ui: { port: 8001 }
     });
+});
+
+
+gulp.task('styles', function() {
+    return gulp.src('src/styles/main.css')
+        .pipe(csscomb())
+        .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task('compile', ['pug', 'scss', 'js', 'images', 'fonts']);

@@ -7,10 +7,6 @@
   align-items: center;
   justify-content: center;
 
-  //@media (min-width: 320px) and (max-width: 425px) {
-  //  position: absolute;
-  //  visibility: hidden;
-  //}
 
   &__row {
     position: relative;
@@ -63,7 +59,7 @@
 
       &:hover {
         background-color: $blue-light;
-        color: $hover-text-color;
+        color: $smoke;
         transition: all 0.4s;
       }
     }
