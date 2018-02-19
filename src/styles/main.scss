@@ -4,6 +4,7 @@
 @import "helpers/_mixins.scss";
 @import "components/_buttons.scss";
 @import "components/_header.scss";
+@import "components/_pagination.scss";
 @import "partials/_header.scss";
 @import "partials/_footer.scss";
 @import "pages/banner";
@@ -20,13 +21,26 @@
 @import "pages/price";
 @import "pages/bubble";
 
-body {
+body,html {
   margin: 0;
-  background-color: whitesmoke;
+  font-family: Raleway, Arial , sans-serif;
+  font-weight: 400;
 }
 
 *, :after, :before {
   box-sizing: border-box;
+}
+
+.section {
+  background-color: whitesmoke;
+
+  &--dark {
+    background-color: $dark;
+  }
+
+  &--aqua {
+    background-color: #00a99d;
+  }
 }
 
 .slick-list {
@@ -36,9 +50,8 @@ body {
 .selected {
   height: 19px;
   color: $blue-light;
-  font-family: "Raleway", Arial , sans-serif;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 20px;
   text-transform: uppercase;
 

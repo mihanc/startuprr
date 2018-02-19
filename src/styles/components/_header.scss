@@ -1,8 +1,7 @@
 .head {
   display: inline;
-  font-family: Raleway, Arial, sans-serif;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
 
   @media (max-width: $sm) {
@@ -13,8 +12,7 @@
 
 .subhead {
   margin: $description-margin;
-  color: $description-color;
-  font-family: Raleway-medium, Arial, sans-serif;
+  color: $gray;
   font-size: 16px;
   font-weight: 500;
 
