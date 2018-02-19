@@ -1,0 +1,26 @@
+.clients__dots {
+  padding: 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  button {
+    border: none;
+    border-radius: 15px;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+    padding: 5px;
+    outline: none;
+    background: gray;
+
+    &:focus {
+      background-color: black;
+    }
+  }
+}
