@@ -1,10 +1,9 @@
 .clients {
 
-  background-color: $head-text-color;
 
   &__row {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 15px;
   }
 
   &__item {
@@ -23,16 +22,3 @@
   }
 }
 
-.clients__dots {
-  padding: 0;
-  text-align: center;
-  li {
-    display: inline-block;
-    margin: 0 15px;
-  }
-
-  button {
-    background-color: inherit;
-    border: none;
-  }
-}

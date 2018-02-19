@@ -1,4 +1,4 @@
-.price
+section.section.price
     .container
         .price__row
             .price__title
@@ -6,10 +6,11 @@
                     span.prices.selected  prices
                 h3.subhead We offer all our services in real low prices in comparison with similar companies
             .price__list
-                +price__item('Standart Plan','19','99')
-                +price__item('Premium Plan','29','99')
-                +price__item('Advanced Plan','49','99')
-                +price__item('Ultimate Plan','99','99')
+                include ../components/_price-item
+                +price-item('Standart Plan','19','99')
+                +price-item('Premium Plan','29','99')
+                +price-item('Advanced Plan','49','99')
+                +price-item('Ultimate Plan','99','99')
 
 
 

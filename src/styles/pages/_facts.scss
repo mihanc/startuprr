@@ -1,19 +1,16 @@
 .facts {
+  @include before-block;
   position: relative;
   padding-top: 77px;
   padding-bottom: 77px;
-  background-color: $head-text-color;
-  @include before-block;
 
   &__title {
     text-align: center;
   }
 
   &__head {
-    color: #e4e4e4;
-
     @include head-after-before;
-
+    color: #e4e4e4;
   }
 
   &__item {
@@ -22,28 +19,26 @@
     text-align: center;
     flex-wrap: wrap;
   }
+}
 
-  &__item-list {
-    margin-right: 13px;
-    margin-left: 13px;
-    width: calc(25% - 26px);
+.fact-item {
+  margin-right: 13px;
+  margin-left: 13px;
+  width: calc(25% - 26px);
 
-    @media (max-width: $md) {
-      margin-top: 30px;
-      margin-bottom: 30px;
-      width: calc(50% - 30px);
-    }
+  @media (max-width: $md) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: calc(50% - 30px);
+  }
 
-    @media (max-width: $sm) {
-      width: 100%;
-    }
-
+  @media (max-width: $sm) {
+    width: 100%;
   }
 
   &__number {
     margin: 0;
     color: #e4e4e4;
-    font-family: "Raleway-medium", Arial, sans-serif;
     line-height: 88px;
     font-size: 80px;
     font-style: italic;
@@ -77,6 +72,7 @@
     }
 
   }
+
 
   &__line {
     margin-top: 10px;
@@ -112,13 +108,11 @@
       margin-left: 2px;
     }
   }
-
   &__text {
     margin: 10px 0 0 0;
     color: #606060;
-    font-family: "Raleway", Arial, sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 800;
     text-transform: uppercase;
 
     @media (max-width: $sm) {
@@ -126,4 +120,6 @@
     }
 
   }
+
+
 }

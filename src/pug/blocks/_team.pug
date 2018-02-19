@@ -1,4 +1,4 @@
-.team
+section.section.team
     .container
         .team__row.row
             .team__title
@@ -12,6 +12,7 @@
                 h3.subhead We’re some creative people with powerful knowledge & awesome skills behind the scene bringing you the bests
 
             .team__list.team-slider
+                include ../components/_team-item
                 +team-item("../images/team/team-1.png", "Alexis Simpson", "CEO & Developer", 'e-mail@mail.com', "380969178407")
                 +team-item("../images/team/team-2.png", "Steven Cole", "User Interface Designer", 'e-mail@mail.com', "380969178407")
                 +team-item("../images/team/team-3.png", "Frank Piener", "Sales Manager", 'e-mail@mail.com', "380969178407")

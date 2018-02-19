@@ -1,7 +1,7 @@
 .bubble {
 
   &__row {
-    padding: 72px 0 72px 0;
+    padding: 62px 0 62px 0;
   }
 
   background-color: gray;
@@ -31,10 +31,9 @@
     &--head {
       display: inline;
       height: 26px;
-      color: $head-text-color;
-      font-family: "Raleway", Arial, sans-serif;
+      color: $dark;
       font-size: 26px;
-      font-weight: 400;
+      font-weight: 800;
 
       @media (max-width: $sm) {
         font-size: 16px;
@@ -44,27 +43,33 @@
 
     span {
       height: 26px;
-      color: $head-text-color;
-      font-family: "Raleway", Arial, sans-serif;
+      color: $dark;
       font-size: 26px;
-      font-weight: 400;
+      font-weight: 800;
       @media (max-width: $sm) {
         font-size: 16px;
       }
 
     }
+  }
+  &__content-link{
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+    color: $smoke;
+    background-color: $blue-light;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
 
-    &--btn {
-      margin-left: auto;
-      width: 151px;
-      background-color: $blue-light;
-      color: #e4e4e4;
-      font-size: 13px;
-      font-weight: 400;
+    &:visited {
+      text-decoration: none;
+    }
 
-      @media (max-width: $sm) {
-        margin: 0;
-      }
+    @media (max-width: $sm) {
+      margin: 0;
     }
   }
 }

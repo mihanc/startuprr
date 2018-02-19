@@ -1,7 +1,7 @@
 .team {
 
   &__row {
-    padding-top: 73px;
+    padding-top: 53px;
     padding-bottom: 106px;
 
     @media (max-width: $sm) {
@@ -54,7 +54,6 @@
     }
   }
 
-
   &__title {
     margin: 0 15px;
     text-align: center;
@@ -62,7 +61,7 @@
 
   &__head {
     margin: 0;
-    color: $head-text-color;
+    color: $dark;
     line-height: 20px;
 
   }
@@ -122,14 +121,13 @@
       border-radius: 5px;
 
       color: #e4e4e4;
-      font-family: "Raleway", Arial, sans-serif;
       font-size: 13px;
-      font-weight: 400;
+      font-weight: 800;
       text-transform: uppercase;
       cursor: pointer;
 
       &:hover {
-        background-color: $head-text-color;
+        background-color: $dark;
       }
 
     }
@@ -155,10 +153,9 @@
 
     &--email {
       margin: 0;
-      color: $description-color;
-      font-family: "Raleway-medium", Arial, sans-serif;
+      color: $gray;
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 26px;
       cursor: pointer;
 
@@ -182,10 +179,9 @@
 
     &--phone {
       margin: 0;
-      color: $description-color;
-      font-family: "Raleway-medium", Arial, sans-serif;
+      color: $gray;
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 46px;
 
       &:before {
@@ -210,7 +206,7 @@
       width: 30px;
       height: 30px;
       border: none;
-      background-color: #383838;
+      background-color: $dark;
 
       &:hover {
         background-color: $blue-light;
@@ -220,7 +216,7 @@
       width: 30px;
       height: 30px;
       border: none;
-      background-color: #383838;
+      background-color: $dark;
 
       &:hover {
         background-color: $blue-light;

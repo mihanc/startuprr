@@ -1,0 +1,16 @@
+mixin price-item(planName,price,priceSup)
+    .price-item
+        .price-item__head
+            p.price-item__name.price-item__name--selected= planName
+            .price-item__help
+                img(src="../images/dollar.svg" alt="Image Title")
+                p.price-item__number= price
+                sup.price-item__number--sup= priceSup
+        .price-item__description
+            p.price-item__text 5 projects
+            p.price-item__text 5 GB storage
+            p.price-item__text Unlimited Users
+            p.price-item__text 5 GB Bandwith
+            p.price-item__text Enhanced Security
+        .price-item__footer
+            a.price-item__link sign up now

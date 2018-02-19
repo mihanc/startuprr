@@ -11,62 +11,7 @@ mixin overlay
         .overlay__like
             img.overlay__like--img(src="../images/like.svg" alt="Icon")
             p.overlay__like--nubmer 138
-            
 
-
-mixin team-item(team__photo, team__name, team__role, team__email, team__phone )
-    .team__item
-        .team__photo
-            img.team__photo--image(src=team__photo alt="Icon")
-            .team__overlay2
-                .team__overlay2--ico
-                    img.team__overlay2--img(src="../images/team/social/facebook-logo.svg" alt="Icon")
-                .team__overlay2--ico
-                    img.team__overlay2--img(src="../images/team/social/twitter.svg" alt="Icon")
-                .team__overlay2--ico
-                    img.team__overlay2--img(src="../images/team/social/google-plus.svg" alt="Icon")
-                .team__overlay2--ico
-                    img.team__overlay2--img(src="../images/team/social/vimeo.svg" alt="Icon")
-                .team__overlay2--ico
-                    img.team__overlay2--img(src="../images/team/social/dribble.svg" alt="Icon")
-
-            p.team__photo--name=team__name
-
-        .team__info
-            p.team__info--role=team__role
-
-            .team__contact
-                p.team__contact--email=team__email
-                p.team__contact--phone=team__phone
-
-
-
-mixin facts__item-list(number,factsIco, factsIco_alt ,itemDescription)
-    .facts__item-list
-        p.facts__number= number
-        .facts__line
-            img.facts__line__img(src=factsIco, alt=factsIco_alt)
-
-        p.facts__text= itemDescription
-
-
-
-mixin price__item(planName,price,priceSup)
-    .price__item
-        .price__item--head
-            p.price__name.price__name--selected= planName
-            .price__help
-                img(src="../images/dollar.svg" alt="Image Title")
-                p.price__number= price
-                    sup.price__number--sup= priceSup
-        .price__item--description
-            p.price__text 5 projects
-            p.price__text 5 GB storage
-            p.price__text Unlimited Users
-            p.price__text 5 GB Bandwith
-            p.price__text Enhanced Security
-        .price__item--footer
-            button.price__item--btn.button sign up now
 
 
 mixin clients__item(clients__src, clients__alt)
@@ -74,22 +19,10 @@ mixin clients__item(clients__src, clients__alt)
 
 
 
-mixin features__item(src, alt, tittle, description)
-    .features__item
-        img.features__image(src=src,alt=alt)
-        .features__text
-            h2.features__text--title= tittle
-            h3.features__text--description= description
 
 
-mixin blockquote__item(authorname, authorposition, quote)
-    .blockquote__item
-        .blockquote__author
-            button.blockquote__author--info.button
-                span.blockquote__author--name= authorname
-                span.blockquote__author--position= authorposition
-        .blockquote__text
-            h2.blockquote__quote= quote
+
+
 
 
 

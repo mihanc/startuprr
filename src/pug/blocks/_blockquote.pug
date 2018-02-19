@@ -1,14 +1,15 @@
-.blockquote
+section.section--aqua.blockquote
     .container
-        .blockquote__row.row
-            .blockquote__list.blockquote-slider
+        .row
+            .blockquote__items.blockquote-slider
+                include ../components/_blockquote-item
                 +blockquote__item('Alex Simpson -', ' Developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a tincidunt arcu. Etiam et pulvinar neque, eu sollicitudin orci. Maecenas eleifend eros augue, eu aliquam nibh luctus et. Integer tellus libero, tempus id eros nec, convallis pharetra nulla.')
                 +blockquote__item('Alex Sempson -', ' Developer 2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a tincidunt arcu. Etiam et pulvinar neque, eu sollicitudin orci. Maecenas eleifend eros augue, eu aliquam nibh luctus et. Integer tellus libero, tempus id eros nec, convallis pharetra nulla..')
                 +blockquote__item('Alex Sumpson -', ' Developer 3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a tincidunt arcu. Etiam et pulvinar neque, eu sollicitudin orci. Maecenas eleifend eros augue, eu aliquam nibh luctus et. Integer tellus libero, tempus id eros nec, convallis pharetra nulla.')
                 +blockquote__item('Alex Sompson -', ' Developer 4', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a tincidunt arcu. Etiam et pulvinar neque, eu sollicitudin orci. Maecenas eleifend eros augue, eu aliquam nibh luctus et. Integer tellus libero, tempus id eros nec, convallis pharetra nulla.')
 
             .blockquote__footer
-                .arrow2
+                .blockquote__arrow
                     button.blockquote__btn--prev
                         img.btn__img--left(src="../images/blockquote/play-arrow.svg" alt="Icon")
                     button.blockquote__btn--next

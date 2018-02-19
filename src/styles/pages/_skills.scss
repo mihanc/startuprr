@@ -1,9 +1,9 @@
 .skills {
+  @include before-block;
   position: relative;
   padding-top: 77px;
   padding-bottom: 70px;
-  background-color: $head-text-color;
-  @include before-block;
+
 
   &__row {
     margin-right: -15px;
@@ -17,11 +17,10 @@
   }
 
   &__head {
+    @include head-after-before;
     color: #e4e4e4;
     line-height: 30px;
     text-align: center;
-    @include head-after-before;
-
   }
 
   &__selected {
@@ -34,50 +33,42 @@
     text-transform: uppercase;
   }
 
-  &__item {
+  &__items {
     display: inline-flex;
     width: 100%;
     margin-top: 50px;
     flex-wrap: wrap;
     text-align: center;
+  }
 
 
 
+}
 
-    &--wrapper {
+.skill {
 
-      width: calc(18% - 16px);
+  &__wrapper {
 
-      @media (max-width: $lg)  {
-        width: 33.33%;
+    width: calc(18% - 16px);
 
-        &:nth-last-child(-n+3){
-          margin-top: 30px;
-        }
-      }
+    @media (max-width: $lg) {
+      width: 33.33%;
 
-      @media (max-width: $sm) {
-        width: calc(50%);
-
-        &:nth-child(3) {
-          margin-top: 30px;
-        }
+      &:nth-last-child(-n+3) {
+        margin-top: 30px;
       }
     }
 
-    &--description {
-      margin-top: 24px;
-      height: 11px;
-      color: $description-color;
-      font-family: "Raleway", Arial , sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 11px;
-      text-transform: uppercase;
+    @media (max-width: $sm) {
+      width: calc(50%);
+
+      &:nth-child(3) {
+        margin-top: 30px;
+      }
     }
   }
 
-  &__item-list {
+  &__circle {
     display: inline-block;
     background-color: inherit;
     width: 120px;
@@ -88,12 +79,13 @@
     border-right: 3px solid white;
     border-radius: 100px;
   }
+
   &__value {
     margin: 0;
     color: #e4e4e4;
     font-family: "Raleway", Arial , sans-serif;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 110px;
     text-transform: uppercase;
   }
@@ -101,4 +93,16 @@
   &__percent {
     font-size: 16px;
   }
+
+  &__description {
+    margin-top: 24px;
+    height: 11px;
+    color: $gray;
+    font-family: "Raleway", Arial , sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 11px;
+    text-transform: uppercase;
+  }
+
 }

@@ -1,0 +1,7 @@
+mixin fact-item(number,factsIco, factsIco_alt ,itemDescription)
+    .fact-item
+        p.fact-item__number= number
+        .fact-item__line
+            img.fact-item__line__img(src=factsIco, alt=factsIco_alt)
+
+        p.fact-item__text= itemDescription

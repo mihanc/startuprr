@@ -1,0 +1,8 @@
+mixin blockquote__item(authorname, authorposition, quote)
+    .blockquote__item
+        .blockquote__author
+            button.blockquote__author--info.button
+                span.blockquote__author--name= authorname
+                span.blockquote__author--position= authorposition
+        .blockquote__text
+            h2.blockquote__quote= quote

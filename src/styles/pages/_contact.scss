@@ -1,13 +1,11 @@
 .contact {
-  background-color: $blue-light;
   text-align: center;
 
   &__head {
     margin: 0;
     color: #e4e4e4;
-    font-family: "Raleway", Arial , sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 40px;
     text-transform: uppercase;
 
@@ -21,7 +19,6 @@
   &__row {
     padding-top: 20px;
     padding-bottom: 20px;
-    //justify-content: space-between;
 
     @media (max-width: $md) {
       justify-content: center;
