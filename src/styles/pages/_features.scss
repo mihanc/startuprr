@@ -6,19 +6,6 @@
   flex-wrap: wrap;
   flex-direction: column;
 
-
-  &__title {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  &__head {
-    @include head-after-before;
-    color: #e4e4e4;
-
-
-  }
-
   &__wrapper {
     display: flex;
     margin-top: 44px;
@@ -28,12 +15,6 @@
       margin-top: 0;
     }
   }
-
-  &__list {
-
-  }
-
-
 
   &__photo {
     display: inline-flex;

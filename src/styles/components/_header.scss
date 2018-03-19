@@ -1,16 +1,43 @@
-.head {
+.title {
+  text-align: center;
+
+&__head {
+  @include head-after-before;
   display: inline;
   font-size: 26px;
   font-weight: 800;
   text-transform: uppercase;
+  color: #383838;
 
   @media (max-width: $sm) {
     font-size: 20px;
   }
 
+  &--light {
+    @include head-after-before;
+    display: inline;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $smoke;
+  }
+
+  &--selected {
+    height: 19px;
+    color: $blue-light;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    @media (max-width: $sm) {
+      font-size: 20px;
+    }
+  }
+
 }
 
-.subhead {
+&__subhead {
   margin: $description-margin;
   color: $gray;
   font-size: 16px;
@@ -19,4 +46,5 @@
   @media (max-width: $sm) {
     font-size: 12px;
   }
+}
 }

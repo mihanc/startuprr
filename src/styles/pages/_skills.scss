@@ -10,19 +10,6 @@
     margin-left: -15px;
   }
 
-  &__title {
-
-    text-align: center;
-
-  }
-
-  &__head {
-    @include head-after-before;
-    color: #e4e4e4;
-    line-height: 30px;
-    text-align: center;
-  }
-
   &__selected {
     height: 19px;
     color: $blue-light;

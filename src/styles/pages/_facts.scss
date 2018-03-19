@@ -4,15 +4,6 @@
   padding-top: 77px;
   padding-bottom: 77px;
 
-  &__title {
-    text-align: center;
-  }
-
-  &__head {
-    @include head-after-before;
-    color: #e4e4e4;
-  }
-
   &__item {
     display: flex;
     margin-top: 30px;

@@ -4,21 +4,9 @@
     padding: 78px 0 78px 0;
   }
 
-  &__title {
-    text-align: center;
-
-  }
-
   &__small {
     display: inline-flex;
     flex-direction: column;
-  }
-
-  &__head {
-    @include head-after-before;
-    color: $dark;
-    line-height: 20px;
-
   }
 
   &__list {

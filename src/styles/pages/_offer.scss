@@ -21,7 +21,6 @@
   }
 
   &__head {
-    @include head-after-before;
     color: $dark;
     position: relative;
     z-index: 3;
