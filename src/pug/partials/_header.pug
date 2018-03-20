@@ -1,7 +1,6 @@
-header.header
+header xmlns:xlink="".header
     .container
         .header__row
-            a(name='yakor')
             button.hamburger
                 img.line(src="../images/header/hamburger.svg")
             button.cross ˟
@@ -11,12 +10,12 @@ header.header
                         a(href='#').menu__link
                             li.menu__item=element
 
-
-
             nav.header__logo
                 img.header__image(src="../images/header/logo.png" alt="Image Title")
             ul.header__list
-               each element in ["HOME", "PORTFOLIO", "BLOG", "PAGES", "FEATURES", "MEGA MENU", "CONTACT"]
+
+                each element in ["HOME", "PORTFOLIO", "BLOG", "PAGES", "FEATURES", "MEGA MENU", "CONTACT"]
+
                    a(href="#").header__list__item= element
 
             input(type="input").header__input.header__input--hidden

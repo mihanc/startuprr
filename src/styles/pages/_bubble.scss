@@ -14,6 +14,8 @@
     display: flex;
     padding-left: 20px;
     padding-right: 40px;
+    justify-content: space-between;
+    align-items: center;
     @media (max-width: $sm) {
 
       flex-direction: column;
@@ -54,7 +56,6 @@
   }
   &__content-link{
     display: block;
-    margin-left: auto;
     padding: 10px;
     color: $smoke;
     background-color: $blue-light;

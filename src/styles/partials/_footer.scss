@@ -1,4 +1,3 @@
-
 .footer {
   background-color: $dark;
 
@@ -94,9 +93,6 @@
       width: 300px;
       @media (max-width: $lg) {
         margin-left: 0;
-      }
-      @media (max-width: $sm) {
-        display: none;
       }
     }
     &__field {

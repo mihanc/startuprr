@@ -20,6 +20,10 @@
     font-weight: 800;
     text-transform: uppercase;
     color: $smoke;
+
+    @media (max-width: $sm) {
+      font-size: 20px;
+    }
   }
 
   &--selected {
